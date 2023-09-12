@@ -52,12 +52,12 @@ export function Topbar() {
 
   const handleCopyEmail = (event) => {
     navigator.clipboard.writeText("todd.griffin61@outlook.com")
-    enqueueSnackbar("Copied Email", {variant: 'info'})
+    enqueueSnackbar("Email Copied to Clipboard", {variant: 'info'})
   }
 
   const handleCopyMobile = (event) => {
     navigator.clipboard.writeText("+447883965135")
-    enqueueSnackbar("Copied Mobile", {variant: 'info'})
+    enqueueSnackbar("Mobile Copied to Cliboard", {variant: 'info'})
   }
 
   return (

@@ -5,14 +5,29 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { SnackbarProvider } from 'notistack';
+import { ThemeOptions, ThemeProvider, createTheme } from '@mui/material/styles';
+
+const themeOptions = createTheme({
+  // palette: {
+  //   mode: 'light',
+  //   primary: {
+  //     main: '#3f51b5'
+  //   },
+  //   secondary: {
+  //     main: '#f50057'
+  //   }
+  // }
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <SnackbarProvider maxSnack={1} autoHideDuration={2000}>
-        <App />
-      </SnackbarProvider>
+      <ThemeProvider theme={themeOptions}>
+        <SnackbarProvider maxSnack={1} autoHideDuration={4000}>
+          <App />
+        </SnackbarProvider>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
