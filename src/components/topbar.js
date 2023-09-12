@@ -134,6 +134,15 @@ export function Topbar() {
               </Button>
             ))}
           </Box>
+          <Box
+            sx={{ 
+              flexGrow: 1, 
+              display: { xl: 'flex', md: 'flex', xs: 'none' },
+              translate: '0px 3px'
+            }}>
+              todd.griffin61@outlook.com
+          </Box>
+          <Box></Box>
         </Toolbar>
       </Container>
     </AppBar>
