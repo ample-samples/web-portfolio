@@ -15,10 +15,12 @@ import {
   AppBar,
   Tooltip
 } from '@mui/material';
+import { useSnackbar } from 'notistack';
 
 const pages = ['Home', 'Portfolio', 'About me'];
 
 export function Topbar() {
+  const { enqueueSnackbar } = useSnackbar()
   const navigate = useNavigate()
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -47,6 +49,16 @@ export function Topbar() {
     }
     setAnchorElNav(null); /* this closes the nav menu */
   };
+
+  const handleCopyEmail = (event) => {
+    navigator.clipboard.writeText("todd.griffin61@outlook.com")
+    enqueueSnackbar("Copied Email", {variant: 'info'})
+  }
+
+  const handleCopyMobile = (event) => {
+    navigator.clipboard.writeText("+447883965135")
+    enqueueSnackbar("Copied Mobile", {variant: 'info'})
+  }
 
   return (
     <AppBar position="static">
@@ -141,7 +153,10 @@ export function Topbar() {
           </Box>
           <Tooltip title='copy mobile'>
             <Box
-              onClick={() => { navigator.clipboard.writeText("+447883965135")}}
+              name='mobile'
+              onClick={
+                handleCopyMobile
+              }
               sx={{ 
                 flexGrow: 0, 
                 display: { xs: 'flex' },
@@ -156,7 +171,10 @@ export function Topbar() {
           </Tooltip>
           <Tooltip title='copy email'>
             <Box
-              onClick={() => { navigator.clipboard.writeText("todd.griffin61@outlook.com")}}
+              id='copy-email'
+              onClick={
+                handleCopyEmail
+              }
               sx={{ 
                 flexGrow: 0, 
                 display: { xs: 'flex' },
