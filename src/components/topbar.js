@@ -12,7 +12,8 @@ import {
   IconButton,
   Toolbar, 
   Box, 
-  AppBar
+  AppBar,
+  Tooltip
 } from '@mui/material';
 
 const pages = ['Home', 'Portfolio', 'About me'];
@@ -138,33 +139,37 @@ export function Topbar() {
               </Button>
             ))}
           </Box>
-          <Box
-            onClick={() => { navigator.clipboard.writeText("+447883965135")}}
-            sx={{ 
-              flexGrow: 0, 
-              display: { xs: 'flex' },
-              translate: '0px 3px',
-              cursor: 'copy'
-            }}>
-            <SmartphoneIcon sx={{ translate: '0px -3px', }} />
-            <Typography sx={{ display: { xl: 'flex', md: 'flex', xs: 'none' }, }} >
-              +447883 965 135
-            </Typography>
+          <Tooltip title='copy mobile'>
+            <Box
+              onClick={() => { navigator.clipboard.writeText("+447883965135")}}
+              sx={{ 
+                flexGrow: 0, 
+                display: { xs: 'flex' },
+                translate: '0px 3px',
+                cursor: 'copy'
+              }}>
+              <SmartphoneIcon sx={{ translate: '0px -3px', }} />
+              <Typography sx={{ display: { xl: 'flex', md: 'flex', xs: 'none' }, }} >
+                +447883 965 135
+              </Typography>
             </Box>
-          <Box
-            onClick={() => { navigator.clipboard.writeText("todd.griffin61@outlook.com")}}
-            sx={{ 
-              flexGrow: 0, 
-              display: { xs: 'flex' },
-              translate: '0px 3px',
-              cursor: 'copy',
-              marginLeft: '20px'
-            }}>
-            <MailOutlineIcon sx={{ translate: '0px -3px', paddingRight: '3px' }} />
-            <Typography sx={{ display: { xl: 'flex', md: 'flex', xs: 'none' }, }} >
-              todd.griffin61@outlook.com
-            </Typography>
-          </Box>
+          </Tooltip>
+          <Tooltip title='copy email'>
+            <Box
+              onClick={() => { navigator.clipboard.writeText("todd.griffin61@outlook.com")}}
+              sx={{ 
+                flexGrow: 0, 
+                display: { xs: 'flex' },
+                translate: '0px 3px',
+                cursor: 'copy',
+                marginLeft: '20px'
+              }}>
+              <MailOutlineIcon sx={{ translate: '0px -3px', paddingRight: '3px' }} />
+              <Typography sx={{ display: { xl: 'flex', md: 'flex', xs: 'none' }, }} >
+                todd.griffin61@outlook.com
+              </Typography>
+            </Box>
+          </Tooltip>
         </Toolbar>
       </Container>
     </AppBar>
