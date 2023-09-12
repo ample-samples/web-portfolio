@@ -1,15 +1,19 @@
 import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import {
+  MenuItem,
+  Button,
+  Container,
+  Menu,
+  Typography,
+  IconButton,
+  Toolbar, 
+  Box, 
+  AppBar
+} from '@mui/material';
 
 const pages = ['Home', 'Portfolio', 'About me'];
 
@@ -135,14 +139,32 @@ export function Topbar() {
             ))}
           </Box>
           <Box
+            onClick={() => { navigator.clipboard.writeText("+447883965135")}}
             sx={{ 
-              flexGrow: 1, 
-              display: { xl: 'flex', md: 'flex', xs: 'none' },
-              translate: '0px 3px'
+              flexGrow: 0, 
+              display: { xs: 'flex' },
+              translate: '0px 3px',
+              cursor: 'copy'
             }}>
+            <SmartphoneIcon sx={{ translate: '0px -3px', }} />
+            <Typography sx={{ display: { xl: 'flex', md: 'flex', xs: 'none' }, }} >
+              +447883 965 135
+            </Typography>
+            </Box>
+          <Box
+            onClick={() => { navigator.clipboard.writeText("todd.griffin61@outlook.com")}}
+            sx={{ 
+              flexGrow: 0, 
+              display: { xs: 'flex' },
+              translate: '0px 3px',
+              cursor: 'copy',
+              marginLeft: '20px'
+            }}>
+            <MailOutlineIcon sx={{ translate: '0px -3px', paddingRight: '3px' }} />
+            <Typography sx={{ display: { xl: 'flex', md: 'flex', xs: 'none' }, }} >
               todd.griffin61@outlook.com
+            </Typography>
           </Box>
-          <Box></Box>
         </Toolbar>
       </Container>
     </AppBar>
