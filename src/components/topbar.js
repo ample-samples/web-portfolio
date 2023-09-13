@@ -27,7 +27,6 @@ export function Topbar() {
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-    console.log("nav open")
   };
 
   const handleMenuClick = (event) => {
@@ -52,12 +51,12 @@ export function Topbar() {
 
   const handleCopyEmail = (event) => {
     navigator.clipboard.writeText("todd.griffin61@outlook.com")
-    enqueueSnackbar("Email Copied to Clipboard", {variant: 'info'})
+    enqueueSnackbar("Email Copied to Clipboard", {variant: 'success'})
   }
 
   const handleCopyMobile = (event) => {
     navigator.clipboard.writeText("+447883965135")
-    enqueueSnackbar("Mobile Copied to Cliboard", {variant: 'info'})
+    enqueueSnackbar("Mobile Copied to Cliboard", {variant: 'success'})
   }
 
   return (
