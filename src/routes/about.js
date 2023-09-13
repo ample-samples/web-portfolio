@@ -1,5 +1,7 @@
 import { Container, Typography, Box, Card, CardContent, CardActions, Button, CardHeader } from "@mui/material"
 import { useState } from "react";
+import profilePicture from '../files/pictures/profile-pic.jpg'
+import './style.css'
 
 export function About() {
   const [tabValue, setTabValue] = useState(0);
@@ -12,8 +14,9 @@ export function About() {
       <Container component="main" maxWidth="xl">
         <Box
         sx={{
-
+          display: "flex"
         }}>
+          <img src={profilePicture} alt="Profile Picture" className="profile-pic" />
         </Box>
         <Box 
         sx={{

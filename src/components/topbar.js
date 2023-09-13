@@ -13,11 +13,12 @@ import {
   Toolbar, 
   Box, 
   AppBar,
-  Tooltip
+  Tooltip,
+  Slide
 } from '@mui/material';
 import { useSnackbar } from 'notistack';
 
-const pages = ['Home', 'Portfolio', 'About me'];
+const pages = ['Home', 'Portfolio', 'About Me'];
 
 export function Topbar() {
   const { enqueueSnackbar } = useSnackbar()
@@ -49,14 +50,29 @@ export function Topbar() {
     setAnchorElNav(null); /* this closes the nav menu */
   };
 
+
+  const TransitionComponentUp = (props) => {
+    return <Slide {...props} direction="up" />;
+  }
+
   const handleCopyEmail = (event) => {
-    navigator.clipboard.writeText("todd.griffin61@outlook.com")
-    enqueueSnackbar("Email Copied to Clipboard", {variant: 'success'})
+    try {
+      navigator.clipboard.writeText("todd.griffin61@outlook.com")
+      enqueueSnackbar("Email Copied to Clipboard", {variant: 'success', TransitionComponent: TransitionComponentUp})
+    } catch (error) {
+      enqueueSnackbar("Oops, something went wrong", {variant: 'error', TransitionComponent: TransitionComponentUp})
+      alert("Couldn't copy 'todd.griffin61@outlook.com'")
+    }
   }
 
   const handleCopyMobile = (event) => {
-    navigator.clipboard.writeText("+447883965135")
-    enqueueSnackbar("Mobile Copied to Cliboard", {variant: 'success'})
+    try {
+      navigator.clipboard.writeText("+447883965135")
+      enqueueSnackbar("Mobile Copied to Cliboard", {variant: 'success', TransitionComponent: TransitionComponentUp})
+    } catch (error) {
+      enqueueSnackbar("Oops, something went wrong", {variant: 'error', TransitionComponent: TransitionComponentUp})
+      alert("Couldn't copy '+447883965135'")
+    }
   }
 
   return (
