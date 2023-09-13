@@ -4,11 +4,7 @@ import profilePicture from '../files/pictures/profile-pic.jpg'
 import './style.css'
 
 export function About() {
-  const [tabValue, setTabValue] = useState(0);
 
-  const handleChange = (event, newValue) => {
-    setTabValue(newValue);
-  };
   return(
     <>
       <Container component="main" maxWidth="xl">
