@@ -7,6 +7,7 @@ export function About() {
 
   return(
     <>
+      <Container component="main" maxWidth="md">
         <Box>
           <img src={profilePicture} alt="Profile Picture" className="profile-pic" />
         </Box>
@@ -28,6 +29,7 @@ export function About() {
             About me
           </Typography>
         </Box>
+      </Container>
     </>
   )
 }

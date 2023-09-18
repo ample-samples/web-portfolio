@@ -1,11 +1,12 @@
 .profile-pic{
   object-fit: cover;
-  width: 230px;
-  height: 230px;
-  margin: 20px 0 20px 0;
+  width: 14rem;
+  height: 14rem;
+  margin-bottom: 1.2rem;
   border-radius: 50%;
 }
 
 .tech-stack > a {
   text-decoration: none;
+  margin-right: 0.5rem;
 }
