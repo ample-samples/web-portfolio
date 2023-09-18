@@ -197,7 +197,7 @@ export function Topbar() {
                 cursor: 'copy',
                 marginLeft: '20px'
               }}>
-              <MailOutlineIcon sx={{ translate: '0px -3px', paddingRight: '3px' }} />
+              <MailOutlineIcon sx={{ translate: '0px -1px', paddingRight: '3px' }} />
               <Typography sx={{ display: { xl: 'flex', md: 'flex', xs: 'none' }, }} >
                 todd.griffin61@outlook.com
               </Typography>

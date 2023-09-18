@@ -7,11 +7,7 @@ export function About() {
 
   return(
     <>
-      <Container component="main" maxWidth="xl">
-        <Box
-        sx={{
-          display: "flex"
-        }}>
+        <Box>
           <img src={profilePicture} alt="Profile Picture" className="profile-pic" />
         </Box>
         <Box 
@@ -20,19 +16,18 @@ export function About() {
           flexDirection: "column",
           alignItems: "center",
         }}>
-          <Typography variant='h4' sx={{color: 'inherit'}}  >
+          <Typography variant='h4' sx={{color: 'inherit'}}>
             About me
           </Typography>
         </Box>
         <Box
         sx={{
-
+          display: "flex"
         }}>
-          <Typography variant='p' sx={{color: 'inherit'}}  >
+          <Typography variant='p' sx={{color: 'inherit'}}>
             About me
           </Typography>
         </Box>
-      </Container>
     </>
   )
 }

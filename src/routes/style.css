@@ -5,3 +5,7 @@
   margin: 20px 0 20px 0;
   border-radius: 50%;
 }
+
+.tech-stack > a {
+  text-decoration: none;
+}

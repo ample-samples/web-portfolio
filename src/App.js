@@ -5,19 +5,19 @@ import { Homepage } from './routes/homepage';
 import { Topbar } from './components/topbar';
 import { Portfolio } from './routes/portfolio';
 import { About } from './routes/about';
-import { Box } from '@mui/material';
+import { Container } from '@mui/material';
 
 function App() {
   return (
     <div className="App">
       <Topbar />
-      <Box sx={{backgroundColor: 'background.default', color:'text.primary'}}>
+      <Container maxWidth='lg' sx={{color:'text.primary'}}>
         <Routes >
           <Route path='/' element={<Homepage />} />
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />} />
         </Routes>
-      </Box>
+      </Container>
     </div>
   );
 }
