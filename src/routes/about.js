@@ -8,6 +8,7 @@ export function About() {
   return(
     <>
       <Container component="main" maxWidth="md">
+        <Typography variant='h3'>About Me</Typography>
         <Box>
           <img src={profilePicture} alt="Profile Picture" className="profile-pic" />
         </Box>
