@@ -27,7 +27,7 @@ export function About() {
           display: "flex"
         }}>
           <Typography variant='p' sx={{color: 'inherit'}}>
-            About me
+            I'm most passionate about elegant solutions, user-friendly interfaces. I believe that software should be as easy for the end user to operate as possible to reduce friction and drive engagement. I'm looking forward to being able to apply some or all of these things in my career!
           </Typography>
         </Box>
       </Container>
