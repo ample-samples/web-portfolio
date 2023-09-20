@@ -1,5 +1,4 @@
-import { Container, Typography, Box, Card, CardContent, CardActions, Button, CardHeader } from "@mui/material"
-import { useState } from "react";
+import { Container, Typography, Box } from "@mui/material"
 import profilePicture from '../files/pictures/profile-pic.jpg'
 import './style.css'
 
