@@ -8,5 +8,8 @@
 
 .tech-stack > a {
   text-decoration: none;
-  margin-right: 0.5rem;
+}
+
+.tech-stack > a > img {
+  width: 4rem;
 }

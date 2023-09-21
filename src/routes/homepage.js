@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Button } from "@mui/material"
+import { Box, Container, List, ListItem, ListItemText, Typography, Button, Grid, Card } from "@mui/material"
 
 export function Homepage() {
   return(
@@ -10,6 +10,7 @@ export function Homepage() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+            marginTop: 3,
         }}>
           <Typography variant='h4'>Socials</Typography>
         </Box>
@@ -22,7 +23,8 @@ export function Homepage() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-            flexWrap: "wrap"
+          marginTop: 3,
+          flexWrap: "wrap",
         }}>
           <Typography variant='h4'>Main Tech stack and Tools</Typography>
         </Box>
@@ -38,6 +40,49 @@ export function Homepage() {
               <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
               <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
         </div>
+          <Typography 
+          sx={{
+            marginTop: 3
+          }}
+          variant='h5'>Full Tech Stack</Typography>
+        <Grid container className="tech-verbose"
+          sx={{
+            marginTop: 3
+          }}>
+          <Grid md={2} ><Card>
+            <Typography sx={{textAlign:"center"}}>Front end Tech</Typography>
+            <List dense={true}>
+              <ListItem>
+                <ListItemText> One </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText> Two </ListItemText>
+              </ListItem>
+            </List>
+          </Card></Grid>
+          <Grid md={2}><Card>
+            <Typography sx={{textAlign:"center"}}>Back End Tech</Typography>
+            <List dense={true}>
+              <ListItem>
+                <ListItemText> One </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText> Two </ListItemText>
+              </ListItem>
+            </List>
+          </Card></Grid>
+          <Grid md={2}><Card>
+            <Typography sx={{textAlign:"center"}}>Tools</Typography>
+            <List dense={true}>
+              <ListItem>
+                <ListItemText> One </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText> Two </ListItemText>
+              </ListItem>
+            </List>
+          </Card></Grid>
+        </Grid>
       </Container>
     </>
   )
