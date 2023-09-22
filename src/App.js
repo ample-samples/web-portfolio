@@ -6,8 +6,12 @@ import { Topbar } from './components/topbar';
 import { Portfolio } from './routes/portfolio';
 import { About } from './routes/about';
 import { Container } from '@mui/material';
+import { createTheme } from '@mui/material';
+
+const theme = createTheme({})
 
 function App() {
+  console.log(theme)
   return (
     <div className="App">
       <Topbar />

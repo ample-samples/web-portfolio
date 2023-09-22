@@ -6,10 +6,11 @@
   border-radius: 50%;
 }
 
-.tech-stack > a {
+.tech-stack > Grid > a {
   text-decoration: none;
 }
 
-.tech-stack > a > img {
+.tech-stack > Grid > a > img {
   width: 4rem;
+  height: 3.5rem;
 }
