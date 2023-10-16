@@ -22,19 +22,19 @@ export function Homepage() {
         }}>
           <Typography variant='h4'>Useful Links</Typography>
         </Box>
-        <Grid container className="tech-verbose" sx={{ 
+        <Grid columns={2} container className="tech-verbose" sx={{ 
           padding: 2,
           flexDirection: "column",
         }}>
-          <Grid md={2} sx={{ margin: 1 }}>
+          <Grid md={2} sx={{ margin: "5px auto" }}>
             <Button variant="contained" target="_blank" href="https://www.linkedin.com/in/todd-griffin-7817611bb/" sx={uLinksSx}>• LinkedIn</Button>
           </Grid>
 
-          <Grid md={2} sx={{ margin: 1 }}>
+          <Grid md={2} sx={{ margin: "5px auto" }}>
             <Button variant="contained" target="_blank" href="https://github.com/ample-samples" sx={uLinksSx}>• GitHub</Button>
           </Grid>
           
-          <Grid md={2} sx={{ margin: 1 }}>
+          <Grid md={2} sx={{ margin: "5px auto" }}>
             <Button variant="contained" target="_blank" href="https://app.enhancv.com/share/f59e760b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" sx={uLinksSx}>• CV</Button>
           </Grid>
         </Grid>
