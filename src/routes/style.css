@@ -14,3 +14,27 @@
   width: 4rem;
   height: 3.5rem;
 }
+
+main > * {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-info-message {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .try-mobile {
+    display: none;
+  }
+
+  .mobile-info-message {
+    display: block;
+  }
+}
+

@@ -18,7 +18,7 @@ import {
 } from '@mui/material';
 import { useSnackbar } from 'notistack';
 
-const pages = ['Home', 'Portfolio', 'About Me'];
+const pages = ['Home', 'Portfolio', 'About Me', 'Try on Mobile'];
 
 export function Topbar() {
   const { enqueueSnackbar } = useSnackbar()
@@ -42,6 +42,10 @@ export function Topbar() {
 
       case pages[2]:
         navigate('/about')
+        break
+
+      case pages[3]:
+        navigate('/try-mobile')
         break
 
       default:
@@ -83,7 +87,6 @@ export function Topbar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },

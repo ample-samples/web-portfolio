@@ -5,6 +5,7 @@ import { Homepage } from './routes/homepage';
 import { Topbar } from './components/topbar';
 import { Portfolio } from './routes/portfolio';
 import { About } from './routes/about';
+import { TryMobile } from './routes/try-mobile'
 import { Container } from '@mui/material';
 import { createTheme } from '@mui/material';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Homepage />} />
           <Route path='/about' element={<About />} />
           <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/try-mobile' element={<TryMobile />} />
         </Routes>
       </Container>
     </div>
