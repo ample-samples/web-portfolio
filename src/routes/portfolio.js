@@ -9,7 +9,6 @@ export function Portfolio() {
   return(
     <>
       <Container component="main" maxWidth="md">
-        <Typography variant='h3'>Portfolio</Typography>
         <br />
         <Typography variant='h4'>What's here is just a taste:</Typography>
         <Typography variant='h6'>To see more, have a look at my <a target="__blank" href="https://github.com/ample-samples">GitHub profile</a></Typography>
