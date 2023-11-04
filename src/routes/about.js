@@ -40,43 +40,45 @@ export function About() {
             // icon={<StarIcon />}
           />
         </VerticalTimeline>
-        <Typography variant='p'>
-          2014 - GCSE
-          <br />
-          Maths, further maths and physics 
-          <br />
-          2015 - BTEC
-          <br />
-          Vehicle Technology
-          <br />
-          2016 - Work experience
-          <br />
-          Landscape Architeture
-          <br />
-          2017-2019 - A levels
-          <br />
-          Maths, Further maths, Physics
-          <br />
-          2018-2021 - University
-          <br />
-          Mech eng & Maths + Comp sci
-          <br />
-          2021 - Work experience
-          <br />
-          Engineering technician - Electrical equipment
-          <br />
-          2022 Work experience
-          <br />
-          NRA
-          <br />
-          2023-Present Software development bootcamp
-          <br />
-          Resuming journey in tech - sofware developer
-          <br />
-          <br />
-          <br />
-          Stick to points that I'm interested in and/or are cool
-        </Typography>
+        {
+          // <Typography variant='p'>
+          //   2014 - GCSE
+          //   <br />
+          //   Maths, further maths and physics 
+          //   <br />
+          //   2015 - BTEC
+          //   <br />
+          //   Vehicle Technology
+          //   <br />
+          //   2016 - Work experience
+          //   <br />
+          //   Landscape Architeture
+          //   <br />
+          //   2017-2019 - A levels
+          //   <br />
+          //   Maths, Further maths, Physics
+          //   <br />
+          //   2018-2021 - University
+          //   <br />
+          //   Mech eng & Maths + Comp sci
+          //   <br />
+          //   2021 - Work experience
+          //   <br />
+          //   Engineering technician - Electrical equipment
+          //   <br />
+          //   2022 Work experience
+          //   <br />
+          //   NRA
+          //   <br />
+          //   2023-Present Software development bootcamp
+          //   <br />
+          //   Resuming journey in tech - sofware developer
+          //   <br />
+          //   <br />
+          //   <br />
+          //   Stick to points that I'm interested in and/or are cool
+          // </Typography>
+        }
 
       </Container>
     </>

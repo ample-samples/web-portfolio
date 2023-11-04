@@ -128,11 +128,16 @@ export function Topbar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleMenuClick}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              {pages.map((page) => { 
+                if (page === "Try on Mobile") {
+                  return (<></>) 
+                } else {
+                  return (
+                    <MenuItem key={page} onClick={handleMenuClick}>
+                      <Typography textAlign="center">{page}</Typography>
+                    </MenuItem>
+                  )
+                }})}
             </Menu>
           </Box>
           <Typography

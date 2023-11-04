@@ -45,11 +45,18 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
           open={open}
           onClose={handleClose}
         >
-          <Box sx={style}>
-            <Typography variant="h6" component="h2">{title}</Typography>
-            <img src={img} alt="" style={{width:"100%", maxHeight:"80vh", overflow:"hidden" }} />
-            <Typography>{fullDesc}</Typography>
-          </Box>
+          <div>
+            <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, width: "85vw"}}>
+              <Typography variant="h6" component="h2">{title}</Typography>
+              <img src={img} alt="" style={{width:"100%", maxHeight:"80vh", overflow:"hidden" }} />
+              <Typography>{fullDesc}</Typography>
+            </Box>
+            <Box sx={{...style, display: {xs: "none", sm: "none", md: "block"}}}>
+              <Typography variant="h6" component="h2">{title}</Typography>
+              <img src={img} alt="" style={{width:"100%", maxHeight:"80vh", overflow:"hidden" }} />
+              <Typography>{fullDesc}</Typography>
+            </Box>
+          </div>
         </Modal>
       </div>
     </>
