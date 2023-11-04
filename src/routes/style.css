@@ -15,7 +15,7 @@
   height: 3.5rem;
 }
 
-main > * {
+.home, .portfolio > *  {
   text-align: center;
 }
 
@@ -39,7 +39,9 @@ main > * {
 }
 
 .vertical-timeline-element-date {
-  background-color: #0086CE;
+  /* background-color: #0086CE; */
+  color: #999;
+  /* text-align: center; */
   /* color: black; */
 }
 
@@ -50,8 +52,24 @@ main > * {
   border-radius: ;
 }
 
+.vertical-timeline-element-title-separator {
+   border: 1px solid #fff;
+}
+
+.vertical-timeline-element-subtitle::after {
+    content:" •";
+}
+
+.vertical-timeline-element-subtitle::before {
+    content:"• ";
+}
+
+.vertical-timeline-element-subtitle {
+  color: #bbb;
+}
+
 .timeline-element-icon {
-  height: 80%;
+  height: 75%;
   margin: 0;
   position: absolute;
   top: 50%;

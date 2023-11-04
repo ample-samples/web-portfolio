@@ -7,7 +7,7 @@ export function TryMobile() {
     <>
       <Container component="main" maxWidth="md">
         <div className="try-mobile">
-        <Typography variant='h4'>A good mobile layout is essential, here's this site's!</Typography>
+        <Typography variant='h4' sx={{padding: "30px"}}>A good mobile layout is essential, here's this site's!</Typography>
           <div className="center">
             <iframe
               title="try-mobile"

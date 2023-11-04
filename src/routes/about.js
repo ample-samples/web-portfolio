@@ -12,33 +12,84 @@ export function About() {
     contentArrowStyle:{borderRight: '7px solid  rgb(33, 150, 243)'},
     iconStyle:{background: 'rgb(33, 150, 243)', color: '#fff'}
   }
+
+  const TimelineElements = () => {
+    return (
+      <>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/488881/computer.svg" alt="" /> }
+          date="2023 - Present"
+          {...verticalTimelineElementSettings}>
+          <h3 className="vertical-timeline-element-title">Boolean Full Stack Graduate</h3>
+          <hr className="vertical-timeline-element-title-separator"/>
+          <h4 className="vertical-timeline-element-subtitle">Boolean, UK</h4>
+          <p> Continual growth as a developer, finding new projects to create and challenges to solve </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/449289/target.svg" alt="" /> }
+          date="2022 - Present"
+          {...verticalTimelineElementSettings}>
+          <h3 className="vertical-timeline-element-title">Target Marker Supervisor - Part Time</h3>
+          <hr className="vertical-timeline-element-title-separator"/>
+          <h4 className="vertical-timeline-element-subtitle">Bisley Shooting Grounds, Bisley</h4>
+          <p> Supervisor Target Marker at NRA </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/357475/circuit.svg" alt="" /> }
+          date="2021"
+          {...verticalTimelineElementSettings}>
+          <h3 className="vertical-timeline-element-title">Engineering Technician</h3>
+          <hr className="vertical-timeline-element-title-separator"/>
+          <h4 className="vertical-timeline-element-subtitle">Guided Ultrasonics Ltd, Brentford</h4>
+          <p>Manufacturing hand-crafted, high-quality non-destructive testing equipment</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/438596/grad-cap.svg" alt="" /> }
+          date="2020 - 2021"
+          {...verticalTimelineElementSettings}>
+          <h3 className="vertical-timeline-element-title">Mechanical Engineering</h3>
+          <hr className="vertical-timeline-element-title-separator"/>
+          <h4 className="vertical-timeline-element-subtitle">Harper Adams University, Shropshire</h4>
+          <p></p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/357475/circuit.svg" alt="" /> }
+          date="2021"
+          {...verticalTimelineElementSettings}>
+          <h3 className="vertical-timeline-element-title">Combined Hons. Mathematics & Computer Science</h3>
+          <hr className="vertical-timeline-element-title-separator"/>
+          <h4 className="vertical-timeline-element-subtitle"></h4>
+          <p></p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/357475/circuit.svg" alt="" /> }
+          date="2021"
+          {...verticalTimelineElementSettings}>
+          <h3 className="vertical-timeline-element-title"></h3>
+          <hr className="vertical-timeline-element-title-separator"/>
+          <h4 className="vertical-timeline-element-subtitle"></h4>
+          <p></p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/118998/basic-tick.svg" alt="" /> }
+        />
+      </>
+    )
+  }
+
   return(
     <>
       <Container component="main" maxWidth="md">
-        <Typography variant='h4' className="about-title"></Typography>
-        <VerticalTimeline layout={"1-column-left"} lineColor="#ccc"> 
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/488881/computer.svg" alt="" /> }
-    date="2023 - Present"
-            {...verticalTimelineElementSettings}>
-            <h3 className="vertical-timeline-element-title"><u>Boolean Full Stack Graduate</u></h3>
-            <h4 className="vertical-timeline-element-subtitle"></h4>
-            <p> Continual growth as a developer, finding new projects to create and challenges to solve </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/449289/target.svg" alt="" /> }
-    date="2023 - Present"
-            {...verticalTimelineElementSettings}>
-            <h3 className="vertical-timeline-element-title"><u>Target Marker Supervisor</u> - Part Time</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bisley Shooting Grounds, Bisley</h4>
-            <p> Supervisor Target Marker at NRA </p>
-          </VerticalTimelineElement>
-            <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-            // icon={<StarIcon />}
-          />
+        <Typography variant='h4' className="about-title" sx={{paddingTop: "30px"}}></Typography>
+        <VerticalTimeline layout={"2-columns"} lineColor="#ccc"> 
+          <TimelineElements />
         </VerticalTimeline>
         {
           // <Typography variant='p'>

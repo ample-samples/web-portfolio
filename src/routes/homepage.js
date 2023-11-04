@@ -14,11 +14,11 @@ const uLinksSx = {justifyContent: "left"}
 
 export function Homepage() {
   const stackIconHeight = 60
-  const stackIconWidth = 60
+  const stackIconWidth = 45
 
   return(
     <>
-      <Container component="main" maxWidth="md" sx={{paddingTop: "30px"}}>
+      <Container component="main" maxWidth="md" sx={{paddingTop: "30px"}} className="home">
         <Box>
           <img src={profilePicture} alt="Profile Picture" className="profile-pic" />
         </Box>
@@ -90,7 +90,7 @@ export function Homepage() {
           <Grid item><a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width={stackIconWidth} height={stackIconHeight}/> </a></Grid>
           <Grid item><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width={stackIconWidth} height={stackIconHeight}/> </a></Grid>
         </Grid>
-        <Typography sx={{ marginTop: 5 }} variant='h4'>Full Tech Stack</Typography>
+        <Typography sx={{ marginTop: 5 }} variant='h5'>Full Tech Stack</Typography>
         <Box sx={{ flexGrow: 1 }}>
 
           <Grid container className="tech-verbose" sx={{justifyContent: "center",}} >
