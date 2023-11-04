@@ -38,9 +38,17 @@
   }
 }
 
+.vertical-timeline-element-content > span {
+  text-align: left;
+}
+
+.vertical-timeline-element-content {
+  text-align: center;
+}
+
 .vertical-timeline-element-date {
   /* background-color: #0086CE; */
-  color: #999;
+  color: #bbb;
   /* text-align: center; */
   /* color: black; */
 }
