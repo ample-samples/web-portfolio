@@ -51,7 +51,7 @@ export function About() {
           icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/438596/grad-cap.svg" alt="" /> }
           date="2020 - 2021"
           {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Mechanical Engineering</h3>
+          <h3 className="vertical-timeline-element-title">Mechanical Engineering - 2nd year</h3>
           <hr className="vertical-timeline-element-title-separator"/>
           <h4 className="vertical-timeline-element-subtitle">Harper Adams University, Shropshire</h4>
           <p></p>
@@ -59,22 +59,22 @@ export function About() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/357475/circuit.svg" alt="" /> }
-          date="2021"
+          date="2019-2020"
           {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Combined Hons. Mathematics & Computer Science</h3>
+          <h3 className="vertical-timeline-element-title">Combined Hons. Mathematics & Computer Science - 1st year</h3>
           <hr className="vertical-timeline-element-title-separator"/>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p></p>
+          <h4 className="vertical-timeline-element-subtitle">Keele University, Staffordshire</h4>
+          <p>Exposure to various languages and computer science concepts. Including: <br/> Java, assembly and systems architecture</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/357475/circuit.svg" alt="" /> }
-          date="2021"
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/438596/grad-cap.svg" alt="" /> }
+          date="2018 - 2019"
           {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title"></h3>
+          <h3 className="vertical-timeline-element-title">Mechanical Engineering - 1st year</h3>
           <hr className="vertical-timeline-element-title-separator"/>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p></p>
+          <h4 className="vertical-timeline-element-subtitle">Harper Adams University, Shropshire</h4>
+          <p>Member of the Motorsport club, work experience with <a href="https://www.m-sport.co.uk/">M-Sport Rally</a> team</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}

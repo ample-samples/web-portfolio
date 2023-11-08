@@ -2,7 +2,7 @@ import { Typography, Button, Modal, Box, Card, CardActions, CardContent, CardMed
 import { useState } from "react";
 
 
-export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hostedURL}) {
+export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hostedURL, frontendRepo, backendRepo}) {
   const style = {
     position: 'absolute',
     top: '50%',
@@ -36,7 +36,9 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
         </CardContent>
         <CardActions>
           {hostedURL && <Button size="small"><a href={hostedURL}>Visit Site</a></Button>}
-          <Button size="small"><a href={repoURL}>Visit Repo</a></Button>
+          {frontendRepo && <Button size="small"><a href={frontendRepo}>Front End</a></Button>}
+          {backendRepo && <Button size="small"><a href={backendRepo}>Back End</a></Button>}
+          {repoURL && <Button size="small"><a href={repoURL}>Visit Repo</a></Button>}
           <Button size='small' onClick={handleOpen}>Learn more</Button>
         </CardActions>
       </Card>
@@ -46,15 +48,15 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
           onClose={handleClose}
         >
           <div>
-            <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, width: "85vw"}}>
+            <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, width: "75vw", maxHeight: "83vh"}}>
               <Typography variant="h6" component="h2">{title}</Typography>
-              <img src={img} alt="" style={{width:"100%", maxHeight:"80vh", overflow:"hidden" }} />
-              <Typography>{fullDesc}</Typography>
+              <img src={img} alt="" style={{width:"100%", height:"30vh", maxHeight:"90%", overflow:"hidden" }} />
+              <Typography sx={{fontSize: "0.7rem"}}>{fullDesc}</Typography>
             </Box>
-            <Box sx={{...style, display: {xs: "none", sm: "none", md: "block"}}}>
+            <Box sx={{...style, display: {xs: "none", sm: "none", md: "block"}, maxHeight: "90vh", textAlign: "center"}}>
               <Typography variant="h6" component="h2">{title}</Typography>
-              <img src={img} alt="" style={{width:"100%", maxHeight:"80vh", overflow:"hidden" }} />
-              <Typography>{fullDesc}</Typography>
+              <img src={img} alt="" style={{maxHeight:"55vh", overflow:"hidden" }} />
+              <Typography sx={{textAlign: "left"}}>{fullDesc}</Typography>
             </Box>
           </div>
         </Modal>
