@@ -11,7 +11,7 @@ export function Portfolio() {
       <Container className="portfolio" component="main" maxWidth="md">
         <br />
         <Typography variant='h4'>What's here is just a taste:</Typography>
-        <Typography variant='h6'>To see more, have a look at my <a target="__blank" href="https://github.com/ample-samples">GitHub profile</a></Typography>
+        <Typography variant='h6'>To see the rest, have a look at my <a target="__blank" href="https://github.com/ample-samples">GitHub profile</a></Typography>
         <hr />
         <br />
         <Grid container rowGap={2} columnGap={2} className="portfolio-list" sx={{ justifyContent: "center", flexDirection: "row" }}>

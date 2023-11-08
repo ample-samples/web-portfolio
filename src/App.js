@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { Homepage } from './routes/homepage';
@@ -7,12 +7,13 @@ import { Portfolio } from './routes/portfolio';
 import { About } from './routes/about';
 import { TryMobile } from './routes/try-mobile'
 import { Container } from '@mui/material';
-import { createTheme } from '@mui/material';
+// import { createTheme } from '@mui/material';
+import { Footer } from './components/footer';
 
-const theme = createTheme({})
+// const theme = createTheme({})
 
 function App() {
-  console.log(theme)
+  // console.log(theme)
   return (
     <div className="App">
       <Topbar />
@@ -24,6 +25,7 @@ function App() {
           <Route path='/try-mobile' element={<TryMobile />} />
         </Routes>
       </Container>
+      <Footer />
     </div>
   );
 }
