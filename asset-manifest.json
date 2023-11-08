@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/web-portfolio/static/css/main.03c8b6b4.css",
-    "main.js": "/web-portfolio/static/js/main.c65daafc.js",
+    "main.css": "/web-portfolio/static/css/main.f4267c76.css",
+    "main.js": "/web-portfolio/static/js/main.66c25910.js",
     "static/js/787.e8a52378.chunk.js": "/web-portfolio/static/js/787.e8a52378.chunk.js",
     "static/media/profile-pic.jpg": "/web-portfolio/static/media/profile-pic.411c8c407bb10d4b262e.jpg",
     "static/media/cohortmanager1.png": "/web-portfolio/static/media/cohortmanager1.a6738986467e48431269.png",
     "static/media/brewerytours.png": "/web-portfolio/static/media/brewerytours.00703a990f211fc6a4f2.png",
-    "static/media/logo.svg": "/web-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/web-portfolio/index.html",
-    "main.03c8b6b4.css.map": "/web-portfolio/static/css/main.03c8b6b4.css.map",
-    "main.c65daafc.js.map": "/web-portfolio/static/js/main.c65daafc.js.map",
+    "main.f4267c76.css.map": "/web-portfolio/static/css/main.f4267c76.css.map",
+    "main.66c25910.js.map": "/web-portfolio/static/js/main.66c25910.js.map",
     "787.e8a52378.chunk.js.map": "/web-portfolio/static/js/787.e8a52378.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03c8b6b4.css",
-    "static/js/main.c65daafc.js"
+    "static/css/main.f4267c76.css",
+    "static/js/main.66c25910.js"
   ]
 }
