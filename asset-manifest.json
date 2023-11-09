@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web-portfolio/static/css/main.f4267c76.css",
-    "main.js": "/web-portfolio/static/js/main.82e14323.js",
+    "main.css": "/web-portfolio/static/css/main.7fd4e919.css",
+    "main.js": "/web-portfolio/static/js/main.c74037ac.js",
     "static/js/787.e8a52378.chunk.js": "/web-portfolio/static/js/787.e8a52378.chunk.js",
     "static/media/profile-pic.jpg": "/web-portfolio/static/media/profile-pic.411c8c407bb10d4b262e.jpg",
     "static/media/cohortmanager1.png": "/web-portfolio/static/media/cohortmanager1.a6738986467e48431269.png",
@@ -9,12 +9,12 @@
     "static/media/brewerytours.png": "/web-portfolio/static/media/brewerytours.00703a990f211fc6a4f2.png",
     "static/media/RGB Acer GUI.png": "/web-portfolio/static/media/RGB Acer GUI.a9e4944981672b1a2280.png",
     "index.html": "/web-portfolio/index.html",
-    "main.f4267c76.css.map": "/web-portfolio/static/css/main.f4267c76.css.map",
-    "main.82e14323.js.map": "/web-portfolio/static/js/main.82e14323.js.map",
+    "main.7fd4e919.css.map": "/web-portfolio/static/css/main.7fd4e919.css.map",
+    "main.c74037ac.js.map": "/web-portfolio/static/js/main.c74037ac.js.map",
     "787.e8a52378.chunk.js.map": "/web-portfolio/static/js/787.e8a52378.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4267c76.css",
-    "static/js/main.82e14323.js"
+    "static/css/main.7fd4e919.css",
+    "static/js/main.c74037ac.js"
   ]
 }
