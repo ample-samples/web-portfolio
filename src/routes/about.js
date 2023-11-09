@@ -44,7 +44,7 @@ export function About() {
           <h3 className="vertical-timeline-element-title">Engineering Technician</h3>
           <hr className="vertical-timeline-element-title-separator"/>
           <h4 className="vertical-timeline-element-subtitle">Guided Ultrasonics Ltd, Brentford</h4>
-          <p>Manufacturing hand-crafted, high-quality non-destructive testing equipment</p>
+          <p>Manufacturing hand-crafted, high-quality non-destructive testing equipment for industrial pipes</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -58,7 +58,7 @@ export function About() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/357475/circuit.svg" alt="" /> }
+          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/438596/grad-cap.svg" alt="" /> }
           date="2019-2020"
           {...verticalTimelineElementSettings}>
           <h3 className="vertical-timeline-element-title">Combined Hons. Mathematics & Computer Science - 1st year</h3>

@@ -43,7 +43,8 @@ export function Portfolio() {
             img={rgbGui}
             shortDesc="A program for a user to control their RGB keyboard lights. Built with Python using Tkinter, the CustomTkinter library and BASH scripting."
             fullDesc=<p>
-              I created this to solve the problem I had. I had just started using Linux and found that there was no such program to control my laptop's lights in an easy way.
+              I created this to solve the problem I had. I had just started using Linux and found that there were no programs to control my laptop's lights in an easy way.
+              This is a Linux only application designed for users of Arch Linux.
               <br />
               <br />
               Features: 
