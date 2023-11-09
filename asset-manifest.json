@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-portfolio/static/css/main.7fd4e919.css",
-    "main.js": "/web-portfolio/static/js/main.c74037ac.js",
+    "main.js": "/web-portfolio/static/js/main.a60fe4b7.js",
     "static/js/787.e8a52378.chunk.js": "/web-portfolio/static/js/787.e8a52378.chunk.js",
     "static/media/profile-pic.jpg": "/web-portfolio/static/media/profile-pic.411c8c407bb10d4b262e.jpg",
     "static/media/cohortmanager1.png": "/web-portfolio/static/media/cohortmanager1.a6738986467e48431269.png",
@@ -10,11 +10,11 @@
     "static/media/RGB Acer GUI.png": "/web-portfolio/static/media/RGB Acer GUI.a9e4944981672b1a2280.png",
     "index.html": "/web-portfolio/index.html",
     "main.7fd4e919.css.map": "/web-portfolio/static/css/main.7fd4e919.css.map",
-    "main.c74037ac.js.map": "/web-portfolio/static/js/main.c74037ac.js.map",
+    "main.a60fe4b7.js.map": "/web-portfolio/static/js/main.a60fe4b7.js.map",
     "787.e8a52378.chunk.js.map": "/web-portfolio/static/js/787.e8a52378.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7fd4e919.css",
-    "static/js/main.c74037ac.js"
+    "static/js/main.a60fe4b7.js"
   ]
 }
