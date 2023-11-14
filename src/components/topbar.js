@@ -14,7 +14,8 @@ import {
   Box, 
   AppBar,
   Tooltip,
-  Slide
+  Slide,
+  Modal
 } from '@mui/material';
 import { useSnackbar } from 'notistack';
 
@@ -28,6 +29,17 @@ export function Topbar() {
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
+  };
+
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    height: 'auto',
+    transform: 'translate(-50%, -50%)',
+    bgcolor: 'background.paper',
+    boxShadow: 24,
+    p: 4,
   };
 
   const handleMenuClick = (event) => {
@@ -54,6 +66,21 @@ export function Topbar() {
     setAnchorElNav(null); /* this closes the nav menu */
   };
 
+  const [ mobileModalOpen, setMobileModalOpen ] = useState(false);
+  const [ emailModalOpen, setEmailModalOpen ] = useState(false);
+
+  const handleClose = () => {
+    setEmailModalOpen(false)
+    setMobileModalOpen(false)
+  }
+
+  const handleOpenMobile = () => {
+    setMobileModalOpen(true)
+  }
+
+  const handleOpenEmail = () => {
+    setEmailModalOpen(true)
+  }
 
   const TransitionComponentUp = (props) => {
     return <Slide {...props} direction="up" />;
@@ -64,8 +91,8 @@ export function Topbar() {
       navigator.clipboard.writeText("todd.griffin61@outlook.com")
       enqueueSnackbar("Email Copied to Clipboard", {variant: 'success', TransitionComponent: TransitionComponentUp})
     } catch (error) {
-      enqueueSnackbar("Oops, something went wrong", {variant: 'error', TransitionComponent: TransitionComponentUp})
-      alert("Couldn't copy 'todd.griffin61@outlook.com'")
+      enqueueSnackbar("Oops, something went wrong", {variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500})
+      handleOpenEmail(true)
     }
   }
 
@@ -74,8 +101,8 @@ export function Topbar() {
       navigator.clipboard.writeText("+447883965135")
       enqueueSnackbar("Mobile Copied to Cliboard", {variant: 'success', TransitionComponent: TransitionComponentUp})
     } catch (error) {
-      enqueueSnackbar("Oops, something went wrong", {variant: 'error', TransitionComponent: TransitionComponentUp})
-      alert("Couldn't copy '+447883965135'")
+      enqueueSnackbar("Oops, something went wrong", {variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500})
+      handleOpenMobile()
     }
   }
 
@@ -210,6 +237,18 @@ export function Topbar() {
                 todd.griffin61@outlook.com
               </Typography>
             </Box>
+              <Modal onClose={handleClose} open={emailModalOpen}>
+                <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, width: "75vw", maxHeight: "83vh"}}>
+                  <Typography sx={{fontSize: "0.7rem"}} variant="p">Couldn't copy email</Typography>
+                  <Typography variant="h6" component="h2">todd.griffin61@outlook.com</Typography>
+                </Box>
+              </Modal>
+              <Modal onClose={handleClose} open={mobileModalOpen}>
+                <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, width: "75vw", maxHeight: "83vh"}}>
+                  <Typography sx={{fontSize: "0.7rem"}}>Couldn't copy mobile</Typography>
+                  <Typography variant="h6" component="h2">+447883 965 135</Typography>
+                </Box>
+              </Modal>
           </Tooltip>
         </Toolbar>
       </Container>
