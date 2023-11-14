@@ -35,11 +35,11 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
           </Typography>
         </CardContent>
         <CardActions>
+          <Button size='small' onClick={handleOpen}>Learn more</Button>
           {hostedURL && <Button size="small"><a href={hostedURL}>Visit Site</a></Button>}
           {frontendRepo && <Button size="small"><a href={frontendRepo}>Front End</a></Button>}
           {backendRepo && <Button size="small"><a href={backendRepo}>Back End</a></Button>}
           {repoURL && <Button size="small"><a href={repoURL}>Visit Repo</a></Button>}
-          <Button size='small' onClick={handleOpen}>Learn more</Button>
         </CardActions>
       </Card>
       <div>
