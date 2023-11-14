@@ -12,7 +12,6 @@ export function Portfolio() {
     <>
       <Container className="portfolio" component="main" maxWidth="md">
         <br />
-        <Typography variant='h4'>What's here is just a taste:</Typography>
         <Typography variant='h6'>To see the rest, have a look at my <a target="__blank" href="https://github.com/ample-samples">GitHub profile</a></Typography>
         <hr />
         <br />
@@ -35,13 +34,13 @@ export function Portfolio() {
                 <li>Adjust your habits retro-actively! Choose which day to enter habits for and see a complete breakdown in the "Habit History" page</li>
               </ul>
             </p>
-            repoURL="https://github.com/ample-samples/js-dom-brewery-tours-challenge"
+            repoURL="https://github.com/ample-samples/habit-tracker"
             // hostedURL="https://github.com/ample-samples/js-dom-brewery-tours-challenge"
           />
           <PortfolioEntry
             title="RBG Keyboard Control"
             img={rgbGui}
-            shortDesc="A program for a user to control their RGB keyboard lights. Built with Python using Tkinter, the CustomTkinter library and BASH scripting."
+            shortDesc="Allows a user to control their RGB keyboard lights. Built with Python using Tkinter, the CustomTkinter library and BASH scripting."
             fullDesc=<p>
               I created this to solve the problem I had. I had just started using Linux and found that there were no programs to control my laptop's lights in an easy way.
               This is a Linux only application designed for users of Arch Linux.

@@ -153,6 +153,7 @@ export function Topbar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              marginLeft: "5px"
             }}
           >
             Todd Griffin
