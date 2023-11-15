@@ -21,10 +21,13 @@ export function About() {
           icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/488881/computer.svg" alt="" /> }
           date="2023 - Present"
           {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Boolean Full Stack Graduate</h3>
+          <h3 className="vertical-timeline-element-title">Boolean Full Stack Developer</h3>
           <hr className="vertical-timeline-element-title-separator"/>
           <h4 className="vertical-timeline-element-subtitle">Boolean, UK</h4>
-          <p> Continual growth as a developer, finding new projects to create and challenges to solve </p>
+          <p> Passionate software developer, finding new projects to create and challenges to solve
+            <br/>
+            <a href="/#/portfolio">Check out my projects here</a>
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

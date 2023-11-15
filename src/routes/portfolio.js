@@ -12,8 +12,6 @@ export function Portfolio() {
     <>
       <Container className="portfolio" component="main" maxWidth="md">
         <br />
-        <Typography variant='h6'>To see the rest, have a look at my <a target="__blank" href="https://github.com/ample-samples">GitHub profile</a></Typography>
-        <hr />
         <br />
         <Grid container rowGap={2} columnGap={2} className="portfolio-list" sx={{ justifyContent: "center", flexDirection: "row" }}>
           <PortfolioEntry
@@ -21,6 +19,9 @@ export function Portfolio() {
             img={habitTracker}
             shortDesc="A Full Stack application to allow logged in users to track, and see a statistical breakdown of their daily habits. Built using React and a RESTful API."
             fullDesc=<p>
+              This app enables users to see their daily well-being habits:
+              <br/>
+              <br/>
               Frontend: Enable logged in users to track, and see a statistical breakdown of their daily habits. Built using React and a RESTful API.
               <br/>
               <br/>
@@ -29,7 +30,7 @@ export function Portfolio() {
               <br/>
               Features:
               <ul>
-                <li>Create your own account! Your details are stored in a database using modern security measures</li>
+                <li>Create your own account! Your details are stored using modern security measures</li>
                 <li>You can track various statistics, these include meditation time, step count, sleep duration and calorie intake</li>
                 <li>Adjust your habits retro-actively! Choose which day to enter habits for and see a complete breakdown in the "Habit History" page</li>
               </ul>
@@ -42,8 +43,9 @@ export function Portfolio() {
             img={rgbGui}
             shortDesc="Allows a user to control their RGB keyboard lights. Built with Python using Tkinter, the CustomTkinter library and BASH scripting."
             fullDesc=<p>
-              I created this to solve the problem I had. I had just started using Linux and found that there were no programs to control my laptop's lights in an easy way.
+              This application was created to help users control their keyboard lights in a user-friendly way.
               This is a Linux only application designed for users of Arch Linux.
+              I created this to solve the problem I had which was when I had just started using Linux and found that there were no programs to control my laptop's lights in an easy way.
               <br />
               <br />
               Features: 
@@ -54,7 +56,7 @@ export function Portfolio() {
                 <li>A switch for light mode and dark mode</li>
               </ul>
             </p>
-            repoURL="https://github.com/ample-samples/js-dom-brewery-tours-challenge"
+            repoURL="https://github.com/ample-samples/acer-predator-rgb-gui"
             // hostedURL="https://github.com/ample-samples/js-dom-brewery-tours-challenge"
           />
           <PortfolioEntry
@@ -74,6 +76,9 @@ export function Portfolio() {
             // hostedURL="https://github.com/ample-samples/js-dom-brewery-tours-challenge"
           />
         </Grid>
+        <br />
+        <hr />
+        <Typography variant='h6'>To see the rest, have a look at my <a target="__blank" href="https://github.com/ample-samples">GitHub profile</a></Typography>
       </Container>
     </>
   )
