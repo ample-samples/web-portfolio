@@ -30,11 +30,9 @@ export function Portfolio() {
             fullDesc=<p>
               This app enables users to see their daily well-being habits:
               <br />
+              <span style={{ fontWeight: "bold", color: "#1976d2" }}>Frontend:</span> Enable logged in users to track, and see a statistical breakdown of their daily habits. Built using React and a RESTful API.
               <br />
-              Frontend: Enable logged in users to track, and see a statistical breakdown of their daily habits. Built using React and a RESTful API.
-              <br />
-              <br />
-              Backend: The back end which powers the habit-tracker, featuring password hashing, data manipulation & storage & retrieval. Built using Express, Node.js, Prisma, jsonwebtoken, bcrypt.
+              <span style={{ fontWeight: "bold", color: "#1976d2" }}>Backend:</span> The back end which powers the habit-tracker, featuring password hashing, data manipulation & storage & retrieval. Built using Express, Node.js, Prisma, jsonwebtoken, bcrypt.
               <br />
               <br />
               Features:
