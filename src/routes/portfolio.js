@@ -70,7 +70,7 @@ export function Portfolio() {
               <br />
               Features: 
               <ul>
-                <li>A sliding clock using react-collapsible</li>
+                <li>Sliding text using TailwindCSS + HeadlessUI</li>
                 <li>Interactive quick links</li>
                 <li>A clean & minimalist aesthetic</li>
               </ul>

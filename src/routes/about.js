@@ -33,19 +33,19 @@ export function About() {
       <Grid container className="tech-verbose" sx={{
         flexDirection: "row", justifyContent: "space-evenly", 
       }}>
-        <Grid md={2} sx={{ margin: 1 }}>
+        <Grid sx={{ margin: 1 }}>
           <Button variant="contained" target="_blank" onClick={() => navigate("/portfolio")} sx={uLinksSx}>&lt; Projects &gt;</Button>
         </Grid>
 
-        <Grid md={2} sx={{ margin: 1 }}>
+        <Grid sx={{ margin: 1 }}>
           <Button variant="contained" target="_blank" href="https://app.enhancv.com/share/f59e760b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" sx={uLinksSx}>&lt; CV &gt;</Button>
         </Grid>
 
-        <Grid md={2} sx={{ margin: 1 }}>
+        <Grid sx={{ margin: 1 }}>
           <Button variant="contained" target="_blank" href="https://www.linkedin.com/in/todd-griffin-7817611bb/" sx={uLinksSx}>&lt; LinkedIn &gt;</Button>
         </Grid>
 
-        <Grid md={2} sx={{ margin: 1 }}>
+        <Grid sx={{ margin: 1 }}>
           <Button variant="contained" target="_blank" href="https://github.com/ample-samples" sx={uLinksSx}>&lt; GitHub &gt;</Button>
         </Grid>
       </Grid>

@@ -10,22 +10,25 @@ import {
   Menu,
   Typography,
   IconButton,
-  Toolbar, 
-  Box, 
+  Toolbar,
+  Box,
   AppBar,
   Tooltip,
   Slide,
   Modal
 } from '@mui/material';
 import { useSnackbar } from 'notistack';
+import { useLocation } from "react-router-dom";
 
 const pages = ['Home', 'Portfolio', 'About Me', 'Try on Mobile'];
 
 export function Topbar() {
+  const { hash } = useLocation();
   const { enqueueSnackbar } = useSnackbar()
   const navigate = useNavigate()
 
   const [anchorElNav, setAnchorElNav] = useState(null);
+  const [locationHash, setLocationHash] = useState(window.location.hash.slice(2))
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -43,21 +46,26 @@ export function Topbar() {
   };
 
   const handleMenuClick = (event) => {
+    console.log(locationHash)
     switch (event.target.textContent) {
       case pages[0]:
         navigate('/')
+        setLocationHash(window.location.hash.slice(2));
         break
 
       case pages[1]:
         navigate('/portfolio')
+        setLocationHash(window.location.hash.slice(2));
         break
 
       case pages[2]:
         navigate('/about')
+        setLocationHash(window.location.hash.slice(2));
         break
 
       case pages[3]:
         navigate('/try-mobile')
+        setLocationHash(window.location.hash.slice(2));
         break
 
       default:
@@ -66,8 +74,8 @@ export function Topbar() {
     setAnchorElNav(null); /* this closes the nav menu */
   };
 
-  const [ mobileModalOpen, setMobileModalOpen ] = useState(false);
-  const [ emailModalOpen, setEmailModalOpen ] = useState(false);
+  const [mobileModalOpen, setMobileModalOpen] = useState(false);
+  const [emailModalOpen, setEmailModalOpen] = useState(false);
 
   const handleClose = () => {
     setEmailModalOpen(false)
@@ -89,9 +97,9 @@ export function Topbar() {
   const handleCopyEmail = (event) => {
     try {
       navigator.clipboard.writeText("todd.griffin61@outlook.com")
-      enqueueSnackbar("Email Copied to Clipboard", {variant: 'success', TransitionComponent: TransitionComponentUp})
+      enqueueSnackbar("Email Copied to Clipboard", { variant: 'success', TransitionComponent: TransitionComponentUp })
     } catch (error) {
-      enqueueSnackbar("Oops, something went wrong", {variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500})
+      enqueueSnackbar("Oops, something went wrong", { variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500 })
       handleOpenEmail(true)
     }
   }
@@ -99,9 +107,9 @@ export function Topbar() {
   const handleCopyMobile = (event) => {
     try {
       navigator.clipboard.writeText("+447883965135")
-      enqueueSnackbar("Mobile Copied to Cliboard", {variant: 'success', TransitionComponent: TransitionComponentUp})
+      enqueueSnackbar("Mobile Copied to Cliboard", { variant: 'success', TransitionComponent: TransitionComponentUp })
     } catch (error) {
-      enqueueSnackbar("Oops, something went wrong", {variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500})
+      enqueueSnackbar("Oops, something went wrong", { variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500 })
       handleOpenMobile()
     }
   }
@@ -155,16 +163,13 @@ export function Topbar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => { 
-                if (page === "Try on Mobile") {
-                  return (<></>) 
-                } else {
-                  return (
-                    <MenuItem key={page} onClick={handleMenuClick}>
-                      <Typography textAlign="center">{page}</Typography>
-                    </MenuItem>
-                  )
-                }})}
+              {pages.filter(page => page !== "Try on Mobile").map((page) => {
+                return (
+                  <MenuItem key={page} onClick={handleMenuClick}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                )
+              })}
             </Menu>
           </Box>
           <Typography
@@ -185,9 +190,9 @@ export function Topbar() {
           >
             Todd Griffin
           </Typography>
-          <Box 
-            sx={{ 
-              flexGrow: 1, 
+          <Box
+            sx={{
+              flexGrow: 1,
               display: { xs: 'none', md: 'flex' },
               translate: '0px 3px'
             }}>
@@ -195,7 +200,22 @@ export function Topbar() {
               <Button
                 key={page}
                 onClick={handleMenuClick}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{
+                  my: 2, color: 'white', display: 'block', '&:hover': { textDecoration: 'underline' }, textDecoration: () => {
+                    console.log({ locationHash, page })
+                    if (page === "Try on Mobile" && locationHash === "try-mobile") {
+                      return "underline"
+                    } else if (page === "Home" && locationHash === "") {
+                      return "underline"
+                    } else if (page === "Portfolio" && locationHash === "portfolio") {
+                      return "underline"
+                    } else if (page === "About Me" && locationHash === "about") {
+                      return "underline"
+                    } else {
+                      return "none"
+                    }
+                  }
+                }}
               >
                 {page}
               </Button>
@@ -207,8 +227,8 @@ export function Topbar() {
               onClick={
                 handleCopyMobile
               }
-              sx={{ 
-                flexGrow: 0, 
+              sx={{
+                flexGrow: 0,
                 display: { xs: 'flex' },
                 translate: '0px 3px',
                 cursor: 'copy'
@@ -225,8 +245,8 @@ export function Topbar() {
               onClick={
                 handleCopyEmail
               }
-              sx={{ 
-                flexGrow: 0, 
+              sx={{
+                flexGrow: 0,
                 display: { xs: 'flex' },
                 translate: '0px 3px',
                 cursor: 'copy',
@@ -237,18 +257,18 @@ export function Topbar() {
                 todd.griffin61@outlook.com
               </Typography>
             </Box>
-              <Modal onClose={handleClose} open={emailModalOpen}>
-                <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, width: "75vw", maxHeight: "83vh"}}>
-                  <Typography sx={{fontSize: "0.7rem"}} variant="p">Couldn't copy email</Typography>
-                  <Typography variant="h6" component="h2">todd.griffin61@outlook.com</Typography>
-                </Box>
-              </Modal>
-              <Modal onClose={handleClose} open={mobileModalOpen}>
-                <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, width: "75vw", maxHeight: "83vh"}}>
-                  <Typography sx={{fontSize: "0.7rem"}}>Couldn't copy mobile</Typography>
-                  <Typography variant="h6" component="h2">+447883 965 135</Typography>
-                </Box>
-              </Modal>
+            <Modal onClose={handleClose} open={emailModalOpen}>
+              <Box sx={{ ...style, display: { xs: "block", sm: "block", md: "none" }, width: "75vw", maxHeight: "83vh" }}>
+                <Typography sx={{ fontSize: "0.7rem" }} variant="p">Couldn't copy email</Typography>
+                <Typography variant="h6" component="h2">todd.griffin61@outlook.com</Typography>
+              </Box>
+            </Modal>
+            <Modal onClose={handleClose} open={mobileModalOpen}>
+              <Box sx={{ ...style, display: { xs: "block", sm: "block", md: "none" }, width: "75vw", maxHeight: "83vh" }}>
+                <Typography sx={{ fontSize: "0.7rem" }}>Couldn't copy mobile</Typography>
+                <Typography variant="h6" component="h2">+447883 965 135</Typography>
+              </Box>
+            </Modal>
           </Tooltip>
         </Toolbar>
       </Container>
