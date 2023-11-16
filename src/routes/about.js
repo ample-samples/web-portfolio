@@ -1,140 +1,106 @@
-import { Container, Typography, Box } from "@mui/material"
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-
-import './style.css'
-
+import { Box, Container, List, ListItem, ListItemText, Typography, Button, Grid, Card } from "@mui/material"
+import { Navigate, useNavigate } from 'react-router-dom';
+import profilePicture from '../files/pictures/profile-pic.jpg'
+import "./style.css"
 export function About() {
 
-  const bio = ""
-  const verticalTimelineElementSettings = {
-    contentStyle:{background: '#0086CE', color: '#fff'},
-    contentArrowStyle:{borderRight: '7px solid  rgb(33, 150, 243)'},
-    iconStyle:{background: 'rgb(33, 150, 243)', color: '#fff'}
+  const frontEndTechs = ["React", "JavaScript", "Material UI", "HTML5", "CSS3"]
+  const backEndTechs = ["Node.js", "PostgreSQL", "Prisma", "APIs", "Express"]
+  const toolsTechs = ["Git", "NPM", "Figma", "Neovim", "Linux"]
+
+  const createListItems = (techs) => {
+    return techs.map((tech) => <ListItem><ListItemText>{tech}</ListItemText></ListItem>)
   }
 
-  const TimelineElements = () => {
-    return (
-      <>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/488881/computer.svg" alt="" /> }
-          date="2023 - Present"
-          {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Boolean Full Stack Developer</h3>
-          <hr className="vertical-timeline-element-title-separator"/>
-          <h4 className="vertical-timeline-element-subtitle">Boolean, UK</h4>
-          <p> Passionate software developer, finding new projects to create and challenges to solve
-            <br/>
-            <a href="/#/portfolio">Check out my projects here</a>
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/449289/target.svg" alt="" /> }
-          date="2022 - Present"
-          {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Target Marker Supervisor - Part Time</h3>
-          <hr className="vertical-timeline-element-title-separator"/>
-          <h4 className="vertical-timeline-element-subtitle">Bisley Shooting Grounds, Bisley</h4>
-          <p> Supervisor Target Marker at NRA </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/357475/circuit.svg" alt="" /> }
-          date="2021"
-          {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Engineering Technician</h3>
-          <hr className="vertical-timeline-element-title-separator"/>
-          <h4 className="vertical-timeline-element-subtitle">Guided Ultrasonics Ltd, Brentford</h4>
-          <p>Manufacturing hand-crafted, high-quality non-destructive testing equipment for industrial pipes</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/438596/grad-cap.svg" alt="" /> }
-          date="2020 - 2021"
-          {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Mechanical Engineering - 2nd year</h3>
-          <hr className="vertical-timeline-element-title-separator"/>
-          <h4 className="vertical-timeline-element-subtitle">Harper Adams University, Shropshire</h4>
-          <p></p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/438596/grad-cap.svg" alt="" /> }
-          date="2019-2020"
-          {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Combined Hons. Mathematics & Computer Science - 1st year</h3>
-          <hr className="vertical-timeline-element-title-separator"/>
-          <h4 className="vertical-timeline-element-subtitle">Keele University, Staffordshire</h4>
-          <p>Exposure to various languages and computer science concepts. Including: <br/> Java, assembly and systems architecture</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/438596/grad-cap.svg" alt="" /> }
-          date="2018 - 2019"
-          {...verticalTimelineElementSettings}>
-          <h3 className="vertical-timeline-element-title">Mechanical Engineering - 1st year</h3>
-          <hr className="vertical-timeline-element-title-separator"/>
-          <h4 className="vertical-timeline-element-subtitle">Harper Adams University, Shropshire</h4>
-          <p>Member of the Motorsport club, work experience with <a href="https://www.m-sport.co.uk/">M-Sport Rally</a> team</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          icon={ <img className="timeline-element-icon" src="https://www.svgrepo.com/show/118998/basic-tick.svg" alt="" /> }
-        />
-      </>
-    )
-  }
+  const uLinksSx = { justifyContent: "left" }
+  const navigate = useNavigate()
+  const stackIconHeight = 60
+  const stackIconWidth = 45
 
-  return(
-    <>
-      <Container component="main" maxWidth="md">
-        <Typography variant='h4' className="about-title" sx={{paddingTop: "30px"}}></Typography>
-        <VerticalTimeline layout={"2-columns"} lineColor="#ccc"> 
-          <TimelineElements />
-        </VerticalTimeline>
-        {
-          // <Typography variant='p'>
-          //   2014 - GCSE
-          //   <br />
-          //   Maths, further maths and physics 
-          //   <br />
-          //   2015 - BTEC
-          //   <br />
-          //   Vehicle Technology
-          //   <br />
-          //   2016 - Work experience
-          //   <br />
-          //   Landscape Architeture
-          //   <br />
-          //   2017-2019 - A levels
-          //   <br />
-          //   Maths, Further maths, Physics
-          //   <br />
-          //   2018-2021 - University
-          //   <br />
-          //   Mech eng & Maths + Comp sci
-          //   <br />
-          //   2021 - Work experience
-          //   <br />
-          //   Engineering technician - Electrical equipment
-          //   <br />
-          //   2022 Work experience
-          //   <br />
-          //   NRA
-          //   <br />
-          //   2023-Present Software development bootcamp
-          //   <br />
-          //   Resuming journey in tech - sofware developer
-          //   <br />
-          //   <br />
-          //   <br />
-          //   Stick to points that I'm interested in and/or are cool
-          // </Typography>
-        }
 
-      </Container>
-    </>
+  return (
+    <Container className="about" maxWidth='md'>
+      <br />
+      <br />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          marginTop: 3,
+        }}>
+        <Typography variant='h4'>👇Check out some of my socials👇</Typography>
+      </Box>
+      <Grid container className="tech-verbose" sx={{
+        flexDirection: "row", justifyContent: "space-evenly", 
+      }}>
+        <Grid md={2} sx={{ margin: 1 }}>
+          <Button variant="contained" target="_blank" onClick={() => navigate("/portfolio")} sx={uLinksSx}>&lt; Projects &gt;</Button>
+        </Grid>
+
+        <Grid md={2} sx={{ margin: 1 }}>
+          <Button variant="contained" target="_blank" href="https://app.enhancv.com/share/f59e760b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" sx={uLinksSx}>&lt; CV &gt;</Button>
+        </Grid>
+
+        <Grid md={2} sx={{ margin: 1 }}>
+          <Button variant="contained" target="_blank" href="https://www.linkedin.com/in/todd-griffin-7817611bb/" sx={uLinksSx}>&lt; LinkedIn &gt;</Button>
+        </Grid>
+
+        <Grid md={2} sx={{ margin: 1 }}>
+          <Button variant="contained" target="_blank" href="https://github.com/ample-samples" sx={uLinksSx}>&lt; GitHub &gt;</Button>
+        </Grid>
+      </Grid>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          marginTop: 3,
+          flexWrap: "wrap",
+        }}>
+        <Typography sx={{ marginBottom: 2 }} variant='h4'>Main Tech stack and Tools</Typography>
+      </Box>
+      <Grid container spacing={2} className="tech-stack" sx={{ flexGrow: 1, flexWrap: "wrap", justifyContent: "center", }}>
+        <Grid item><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+        <Grid item><a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+        <Grid item><a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+        <Grid item><a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+        <Grid item><a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+      </Grid>
+      <Grid container spacing={2} className="tech-stack" sx={{ flexGrow: 1, flexWrap: "wrap", justifyContent: "center", }}>
+        <Grid item><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+        <Grid item><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+        <Grid item><a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+        <Grid item><a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+        <Grid item><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>
+      </Grid>
+      <Typography sx={{ marginTop: 5 }} variant='h5'>Full Tech Stack</Typography>
+      <Box sx={{ flexGrow: 1 }}>
+
+        <Grid container className="tech-verbose" sx={{ justifyContent: "center", }} >
+          <Grid md={2} sx={{ margin: 1 }}><Card sx={{ backgroundColor: "grey.300" }}>
+            <Typography sx={{ textAlign: "center", margin: 1 }}>Front end Tech</Typography>
+            <List dense={true}>
+              {createListItems(frontEndTechs)}
+            </List>
+          </Card></Grid>
+
+          <Grid md={2} sx={{ margin: 1 }}><Card sx={{ backgroundColor: "grey.300" }}>
+            <Typography sx={{ textAlign: "center", margin: 1 }}>Back End Tech</Typography>
+            <List dense={true}>
+              {createListItems(backEndTechs)}
+            </List>
+          </Card></Grid>
+
+          <Grid md={2} sx={{ margin: 1 }}><Card sx={{ backgroundColor: "grey.300" }}>
+            <Typography sx={{ textAlign: "center", margin: 1 }}>Tools</Typography>
+            <List dense={true}>
+              {createListItems(toolsTechs)}
+            </List>
+          </Card></Grid>
+
+        </Grid>
+      </Box>
+    </ Container>
   )
+
 }
+
