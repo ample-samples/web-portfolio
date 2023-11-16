@@ -28,15 +28,12 @@ export function About() {
           flexDirection: "column",
           marginTop: 3,
         }}>
-        <Typography variant='h4'>👇Check out some of my socials👇</Typography>
+        <Typography variant='h4' sx={{ display: { xs: "block", md: "none" } }}>Check out some of my socials<br />👇  👇</Typography>
+        <Typography variant='h4' sx={{ display: { xs: "none", md: "block" } }}>👇Check out some of my socials👇</Typography>
       </Box>
       <Grid container className="tech-verbose" sx={{
-        flexDirection: "row", justifyContent: "space-evenly", 
+        flexDirection: { xs: "column", md: "row" }, justifyContent: "space-evenly", 
       }}>
-        <Grid sx={{ margin: 1 }}>
-          <Button variant="contained" target="_blank" onClick={() => navigate("/portfolio")} sx={uLinksSx}>&lt; Projects &gt;</Button>
-        </Grid>
-
         <Grid sx={{ margin: 1 }}>
           <Button variant="contained" target="_blank" href="https://app.enhancv.com/share/f59e760b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" sx={uLinksSx}>&lt; CV &gt;</Button>
         </Grid>
@@ -47,6 +44,10 @@ export function About() {
 
         <Grid sx={{ margin: 1 }}>
           <Button variant="contained" target="_blank" href="https://github.com/ample-samples" sx={uLinksSx}>&lt; GitHub &gt;</Button>
+        </Grid>
+
+        <Grid sx={{ margin: 1 }}>
+          <Button variant="contained" target="_blank" href="https://exercism.org/profiles/ample-samples" sx={uLinksSx}>&lt; Exercism &gt;</Button>
         </Grid>
       </Grid>
       <Box
