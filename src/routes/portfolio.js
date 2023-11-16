@@ -3,6 +3,7 @@ import brewerytours from '../files/pictures/brewerytours.png'
 import cohortManager from '../files/pictures/cohortmanager1.png'
 import habitTracker from  '../files/pictures/habit-tracker.png'
 import rgbGui from  '../files/pictures/RGB Acer GUI.png'
+import browserHomepage from  '../files/pictures/browser-homepage.png'
 
 import { PortfolioEntry } from "../components/PortfolioProjectCard"
 import { PortfolioEntryCarousel } from "../components/PortfolioProjectCardCarousel"
@@ -58,6 +59,14 @@ export function Portfolio() {
             </p>
             repoURL="https://github.com/ample-samples/acer-predator-rgb-gui"
             // hostedURL="https://github.com/ample-samples/js-dom-brewery-tours-challenge"
+          />
+          <PortfolioEntry
+            title="Browser Homepage"
+            img={browserHomepage}
+            shortDesc="A small single page application project to become familiar with Next.js and Tailwind CSS, deployed to Vercel."
+            fullDesc="A small single page application project to become familiar with Next.js and Tailwind CSS, deployed to Vercel."
+            repoURL="https://github.com/ample-samples/browser-homepage"
+            hostedURL="https://browser-homepage-ample-samples.vercel.app/"
           />
           <PortfolioEntry
             title="Cohort Manager"
