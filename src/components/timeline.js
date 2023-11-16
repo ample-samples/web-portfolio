@@ -94,10 +94,11 @@ export function TimeLine() {
   return (
     <>
       <Container component="main" maxWidth="md">
-        <Typography variant='h4' className="about-title" sx={{ paddingTop: "30px" }}></Typography>
+        <Typography variant='h4' sx={{ paddingTop: "30px", borderBottom: "3px solid #ccc", borderTop: "none" }} />
         <VerticalTimeline layout={"2-columns"} lineColor="#ccc">
           <TimelineElements />
         </VerticalTimeline>
+        <Typography variant='h4' sx={{ borderTop: "3px solid #ccc", borderBottom: "none" }} />
       </Container>
     </>
   )

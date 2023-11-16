@@ -32,7 +32,7 @@ export function About() {
         <Typography variant='h4' sx={{ display: { xs: "none", md: "block" } }}>👇Check out some of my socials👇</Typography>
       </Box>
       <Grid container className="tech-verbose" sx={{
-        flexDirection: { xs: "column", md: "row" }, justifyContent: "space-evenly", 
+        flexDirection: { xs: "column", md: "row" }, justifyContent: "space-evenly",
       }}>
         <Grid sx={{ margin: 1 }}>
           <Button variant="contained" target="_blank" href="https://app.enhancv.com/share/f59e760b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" sx={uLinksSx}>&lt; CV &gt;</Button>
