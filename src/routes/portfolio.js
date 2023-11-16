@@ -64,7 +64,18 @@ export function Portfolio() {
             title="Browser Homepage"
             img={browserHomepage}
             shortDesc="A small single page application project to become familiar with Next.js and Tailwind CSS, deployed to Vercel."
-            fullDesc="A small single page application project to become familiar with Next.js and Tailwind CSS, deployed to Vercel."
+            fullDesc= <p>
+              I created this page to familiarise myself with Next.js and Tailwind CSS.
+              <br />
+              <br />
+              Features: 
+              <ul>
+                <li>A sliding clock using react-collapsible</li>
+                <li>Interactive quick links</li>
+                <li>A clean & minimalist aesthetic</li>
+              </ul>
+              There is a known issue after leaving it open and returning back the page, where the collapse functions stop updating as intended for a few seconds.
+            </p>
             repoURL="https://github.com/ample-samples/browser-homepage"
             hostedURL="https://browser-homepage-ample-samples.vercel.app/"
           />
