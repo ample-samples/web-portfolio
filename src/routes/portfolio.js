@@ -74,7 +74,6 @@ export function Portfolio() {
                 <li>Interactive quick links</li>
                 <li>A clean & minimalist aesthetic</li>
               </ul>
-              There is a known issue after leaving it open and returning back the page, where the collapse functions stop updating as intended for a few seconds.
             </p>
             repoURL="https://github.com/ample-samples/browser-homepage"
             hostedURL="https://browser-homepage-ample-samples.vercel.app/"

@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Topbar />
-      <Container className="main-content" maxWidth='lg' sx={{color:'text.primary'}}>
+      <Container className="main-content" maxWidth='lg' sx={{ color: 'text.primary' }}>
         <Routes >
           <Route path='/' element={<Homepage />} />
           <Route path='/about' element={<About />} />
