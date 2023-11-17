@@ -18,6 +18,10 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  // TODO: shift modal to the left to centralise it on small 
+  // screens (accounting for the scrollbar)
+  // and hide the scrollbar behind phone frame
+  //
   return(
     <>
       <Card sx={{ maxWidth: 345 }}>
