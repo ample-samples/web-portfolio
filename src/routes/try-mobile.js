@@ -5,13 +5,13 @@ import './style.css'
 
 export function TryMobile() {
 
-  return(
+  return (
     <>
       <Container component="main" maxWidth="md">
         <div className="try-mobile">
-        <Typography variant='h4' sx={{padding: "30px"}}>A responsive layout is essential, here's this site's!</Typography>
-          <div className="center" style={{position: "relative", top: 0, left: 0, height: 850}}>
-            <Box sx={{position: "relative", top: 104, left: 0 }}>
+          <Typography variant='h4' sx={{ padding: "30px" }}>A responsive layout is essential, here's this site's!</Typography>
+          <div className="center" style={{ position: "relative", top: 0, left: 0, height: 850 }}>
+            <Box sx={{ position: "relative", top: 104, left: 0 }}>
               <iframe
                 className="frame-area"
                 seamless="seamless"
@@ -22,16 +22,16 @@ export function TryMobile() {
                 frameborder="0"
               />
             </Box>
-            <Box sx={{position: "absolute", top: 10, pointerEvents: "none"}} >
+            <Box sx={{ position: "absolute", top: 10, pointerEvents: "none" }} >
               <img height="820" src={iPhoneFull} alt="iPhone" />
             </Box>
-            <Box sx={{position: "absolute", top: 0, pointerEvents: "none"}} >
+            <Box sx={{ position: "absolute", top: 0, pointerEvents: "none" }} >
               <img height="850" src={iPhoneShell} alt="iPhone" />
             </Box>
 
           </div>
         </div>
-        <Typography className="mobile-info-message" variant='h5' sx={{textAlign: "center"}}>The mobile preview is not available on small devices :(</Typography>
+        <Typography className="mobile-info-message" variant='h5' sx={{ textAlign: "center" }}>The mobile preview is not available on small devices :(</Typography>
       </Container>
     </>
   )
