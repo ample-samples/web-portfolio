@@ -4,6 +4,7 @@ import cohortManager from '../files/pictures/cohortmanager1.png'
 import habitTracker from '../files/pictures/habit-tracker.png'
 import rgbGui from '../files/pictures/RGB Acer GUI.png'
 import browserHomepage from '../files/pictures/browser-homepage.png'
+import './style.css'
 
 import { PortfolioEntry } from "../components/PortfolioProjectCard"
 import { PortfolioEntryCarousel } from "../components/PortfolioProjectCardCarousel"

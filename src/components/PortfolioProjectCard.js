@@ -44,11 +44,15 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
       </Card>
       <div>
         <Modal
+          className="portfolio-modal"
           open={open}
           onClose={handleClose}
         >
           <div>
-            <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, width: "75vw", maxHeight: "83vh"}}>
+            <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, 
+              position: "absolute",
+              top: "50%",
+              width: "75vw", maxHeight: "83vh"}}>
               <Typography variant="h6" component="h2">{title}</Typography>
               <img src={img} alt="" style={{width:"100%", height:"30vh", maxHeight:"90%", overflow:"hidden" }} />
               <Typography sx={{fontSize: "0.7rem"}}>{fullDesc}</Typography>
