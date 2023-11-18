@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/web-portfolio/static/css/main.1bf266ff.css",
-    "main.js": "/web-portfolio/static/js/main.91496457.js",
+    "main.js": "/web-portfolio/static/js/main.c67bbe0a.js",
     "static/js/787.e8a52378.chunk.js": "/web-portfolio/static/js/787.e8a52378.chunk.js",
     "static/media/profile-pic.jpg": "/web-portfolio/static/media/profile-pic.411c8c407bb10d4b262e.jpg",
     "static/media/browser-homepage.png": "/web-portfolio/static/media/browser-homepage.6e0fc17d07a60ff29c65.png",
+    "static/media/iPhone14_shell.png": "/web-portfolio/static/media/iPhone14_shell.512ce8740f5491d10666.png",
     "static/media/cohortmanager1.png": "/web-portfolio/static/media/cohortmanager1.a6738986467e48431269.png",
     "static/media/habit-tracker.png": "/web-portfolio/static/media/habit-tracker.279fef389c2cf699f08e.png",
     "static/media/brewerytours.png": "/web-portfolio/static/media/brewerytours.00703a990f211fc6a4f2.png",
     "static/media/RGB Acer GUI.png": "/web-portfolio/static/media/RGB Acer GUI.a9e4944981672b1a2280.png",
-    "static/media/iPhone14_shell.png": "/web-portfolio/static/media/iPhone14_shell.ed6108ac83252b5ba8b5.png",
     "static/media/iPhone_chrome_full_ui.png": "/web-portfolio/static/media/iPhone_chrome_full_ui.1fcaaabc4afdf6ae1e38.png",
     "index.html": "/web-portfolio/index.html",
     "main.1bf266ff.css.map": "/web-portfolio/static/css/main.1bf266ff.css.map",
-    "main.91496457.js.map": "/web-portfolio/static/js/main.91496457.js.map",
+    "main.c67bbe0a.js.map": "/web-portfolio/static/js/main.c67bbe0a.js.map",
     "787.e8a52378.chunk.js.map": "/web-portfolio/static/js/787.e8a52378.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bf266ff.css",
-    "static/js/main.91496457.js"
+    "static/js/main.c67bbe0a.js"
   ]
 }
