@@ -39,11 +39,11 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
           </Typography>
         </CardContent>
         <CardActions>
-          {hostedURL && <Button size="small"><a href={hostedURL}>Visit Site</a></Button>}
+          {hostedURL ? <Button size="small"><a href={hostedURL}>Visit Site</a></Button> : null}
           <Button size='small' onClick={handleOpen}>Learn more</Button>
-          {frontendRepo && <Button size="small"><a href={frontendRepo}>Front End</a></Button>}
-          {backendRepo && <Button size="small"><a href={backendRepo}>Back End</a></Button>}
-          {repoURL && <Button size="small"><a href={repoURL}>Visit Repo</a></Button>}
+          {frontendRepo ? <Button size="small"><a href={frontendRepo}>Front End</a></Button> : null}
+          {backendRepo ? <Button size="small"><a href={backendRepo}>Back End</a></Button> : null}
+          {repoURL ? <Button size="small"><a href={repoURL}>Visit Repo</a></Button> : null}
         </CardActions>
       </Card>
       <div>

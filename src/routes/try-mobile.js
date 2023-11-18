@@ -18,13 +18,13 @@ export function TryMobile() {
                 seamless="seamless"
                 title="try-mobile"
                 width="380"
-                height="646"
+                height="654"
                 src="https://ample-samples.github.io/web-portfolio/#/"
                 frameborder="0"
               />
             </Box>
             <Box sx={{ position: "absolute", top: 10, pointerEvents: "none" }} >
-              <img height="820" src={iPhoneFull} alt="iPhone" />
+              <img height="828" src={iPhoneFull} alt="iPhone" style={{borderRadius: 23}} />
             </Box>
             <Box sx={{ position: "absolute", top: 0, pointerEvents: "none" }} >
               <img height="850" src={iPhoneShell} alt="iPhone" />
