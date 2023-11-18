@@ -4,7 +4,8 @@ import iPhoneFull from '../files/pictures/iPhone_chrome_full_ui.png'
 import './style.css'
 
 export function TryMobile() {
-
+  // Mobile layout courtesy of:
+  // https://www.figma.com/file/oeGUiu3zBZDykQQm6ZvnfX/iPhone-Browsers---Safari-%26-Chrome-(iOS-15)-(Community)?node-id=747%3A19149&mode=dev
   return (
     <>
       <Container component="main" maxWidth="md">

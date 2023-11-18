@@ -21,7 +21,7 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
   // TODO: shift modal to the left to centralise it on small 
   // screens (accounting for the scrollbar)
   // and hide the scrollbar behind phone frame
-  //
+
   return(
     <>
       <Card sx={{ maxWidth: 345 }}>
@@ -53,7 +53,7 @@ export function PortfolioEntry({ title, img, shortDesc, fullDesc, repoURL, hoste
           onClose={handleClose}
         >
           <div>
-            <Box sx={{...style, display: {xs: "block", sm: "block", md: "none"}, 
+            <Box sx={{...style, display: {xs: "block", md: "none"}, 
               position: "absolute",
               top: "50%",
               width: "75vw", maxHeight: "83vh"}}>
