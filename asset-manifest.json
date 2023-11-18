@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-portfolio/static/css/main.1bf266ff.css",
-    "main.js": "/web-portfolio/static/js/main.81af7d9a.js",
+    "main.js": "/web-portfolio/static/js/main.b121a0b3.js",
     "static/js/787.e8a52378.chunk.js": "/web-portfolio/static/js/787.e8a52378.chunk.js",
     "static/media/profile-pic.jpg": "/web-portfolio/static/media/profile-pic.411c8c407bb10d4b262e.jpg",
     "static/media/browser-homepage.png": "/web-portfolio/static/media/browser-homepage.6e0fc17d07a60ff29c65.png",
@@ -10,14 +10,16 @@
     "static/media/habit-tracker.png": "/web-portfolio/static/media/habit-tracker.279fef389c2cf699f08e.png",
     "static/media/brewerytours.png": "/web-portfolio/static/media/brewerytours.00703a990f211fc6a4f2.png",
     "static/media/RGB Acer GUI.png": "/web-portfolio/static/media/RGB Acer GUI.a9e4944981672b1a2280.png",
+    "static/media/device.svg": "/web-portfolio/static/media/device.d20b57d2549fff92426224ecd780cf47.svg",
     "static/media/iPhone_chrome_full_ui.png": "/web-portfolio/static/media/iPhone_chrome_full_ui.1fcaaabc4afdf6ae1e38.png",
+    "static/media/glass.svg": "/web-portfolio/static/media/glass.25465f6e6f00254f90acca8681c8b1c7.svg",
     "index.html": "/web-portfolio/index.html",
     "main.1bf266ff.css.map": "/web-portfolio/static/css/main.1bf266ff.css.map",
-    "main.81af7d9a.js.map": "/web-portfolio/static/js/main.81af7d9a.js.map",
+    "main.b121a0b3.js.map": "/web-portfolio/static/js/main.b121a0b3.js.map",
     "787.e8a52378.chunk.js.map": "/web-portfolio/static/js/787.e8a52378.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bf266ff.css",
-    "static/js/main.81af7d9a.js"
+    "static/js/main.b121a0b3.js"
   ]
 }
