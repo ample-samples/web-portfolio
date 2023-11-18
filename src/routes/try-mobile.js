@@ -17,6 +17,8 @@ export function TryMobile() {
             <Box sx={{ position: "absolute", top: -7, pointerEvents: "none" }} >
               <img height="866" src={device} alt="iPhone" style={{borderRadius: 23}} />
             </Box>
+            <Box sx={{ position: "absolute", backgroundColor: "white", height: 654, width: 380, top: 104, pointerEvents: "none" }} >
+            </Box>
             <Box sx={{ position: "relative", top: 104, left: 0 }}>
               <iframe
                 className="frame-area"
