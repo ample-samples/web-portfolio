@@ -97,7 +97,7 @@ export function Topbar() {
   const handleCopyEmail = (event) => {
     try {
       navigator.clipboard.writeText("todd.griffin61@outlook.com")
-      enqueueSnackbar("Email Copied to Clipboard", { variant: 'success', TransitionComponent: TransitionComponentUp })
+      enqueueSnackbar("Email Copied to Clipboard", { variant: 'success', TransitionComponent: TransitionComponentUp, autoHideDuration: 3000 })
     } catch (error) {
       enqueueSnackbar("Oops, something went wrong", { variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500 })
       handleOpenEmail(true)
@@ -107,7 +107,7 @@ export function Topbar() {
   const handleCopyMobile = (event) => {
     try {
       navigator.clipboard.writeText("+447883965135")
-      enqueueSnackbar("Mobile Copied to Cliboard", { variant: 'success', TransitionComponent: TransitionComponentUp })
+      enqueueSnackbar("Mobile Copied to Cliboard", { variant: 'success', TransitionComponent: TransitionComponentUp, autoHideDuration: 3000 })
     } catch (error) {
       enqueueSnackbar("Oops, something went wrong", { variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500 })
       handleOpenMobile()

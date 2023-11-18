@@ -13,7 +13,7 @@ export function TryMobile() {
       <Container component="main" maxWidth="md">
         <div className="try-mobile">
           <Typography variant='h4' sx={{ padding: "30px" }}>A responsive layout is essential, here's this site's!</Typography>
-          <div className="center" style={{ position: "relative", top: 0, left: 0, height: 870 }}>
+          <div className="center" style={{ position: "relative", top: 0, left: 0, height: 860 }}>
             <Box sx={{ position: "absolute", top: -7, pointerEvents: "none" }} >
               <img height="866" src={device} alt="iPhone" style={{borderRadius: 23}} />
             </Box>
