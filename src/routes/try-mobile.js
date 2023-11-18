@@ -26,7 +26,7 @@ export function TryMobile() {
                 title="try-mobile"
                 width="380"
                 height="654"
-                src="https://ample-samples.github.io/web-portfolio/#/"
+                src="/web-portfolio/#/"
                 frameborder="0"
               />
             </Box>
