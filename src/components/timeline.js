@@ -1,4 +1,4 @@
-import { Container, Typography, Box } from "@mui/material"
+import { Container, Typography } from "@mui/material"
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './style.css'
@@ -15,6 +15,23 @@ export function TimeLine() {
       <>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          icon={<img className="timeline-element-icon" src="https://www.svgrepo.com/show/449289/target.svg" alt="" />}
+          date="Dec 1 2023 - Present"
+          {...verticalTimelineElementSettings}
+          contentStyle={{ background: '#fff', color: '#000', borderTop: '4px solid #0086CE' }}
+        >
+          <h3 className="vertical-timeline-element-title">Advent of Code 2023</h3>
+          <hr className="vertical-timeline-element-title-separator" />
+          <h4 className="vertical-timeline-element-subtitle">Just for fun!</h4>
+          <p>An annual coding challenge, spanning 25 days of December, with a new challenge released each day. 
+            <hr />
+            This year I've decided to write my solutions in Typescript
+            <br />
+            <a target="_blank" rel="noreferrer" href="https://github.com/ample-samples/advent-of-code">https://github.com/ample-samples/advent-of-code</a>
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           icon={<img className="timeline-element-icon" src="https://www.svgrepo.com/show/488881/computer.svg" alt="" />}
           date="2023 - Present"
           {...verticalTimelineElementSettings}
@@ -24,7 +41,7 @@ export function TimeLine() {
           <h4 className="vertical-timeline-element-subtitle">Boolean, UK</h4>
           <p> Passionate software developer, finding new projects to create and challenges to solve
             <br />
-            <a href="/#/portfolio">Check out my projects here</a>
+            <a href="web-portfolio/#/portfolio">Check out my projects here</a>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
