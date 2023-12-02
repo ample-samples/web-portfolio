@@ -16,9 +16,8 @@ export function TimeLine() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           icon={<img className="timeline-element-icon" src="https://www.svgrepo.com/show/449289/target.svg" alt="" />}
-          date="Dec 1 2023 - Present"
+          date="Dec 2023"
           {...verticalTimelineElementSettings}
-          contentStyle={{ background: '#fff', color: '#000', borderTop: '4px solid #0086CE' }}
         >
           <h3 className="vertical-timeline-element-title">Advent of Code 2023</h3>
           <hr className="vertical-timeline-element-title-separator" />
@@ -27,7 +26,22 @@ export function TimeLine() {
             <hr />
             This year I've decided to write my solutions in Typescript
             <br />
-            <a target="_blank" rel="noreferrer" href="https://github.com/ample-samples/advent-of-code">https://github.com/ample-samples/advent-of-code</a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/ample-samples/advent-of-code">My solutions</a>
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          icon={<img className="timeline-element-icon" src="https://www.svgrepo.com/show/488881/computer.svg" alt="" />}
+          date="Nov 2023 - Present"
+          {...verticalTimelineElementSettings}
+          contentStyle={{ background: '#fff', color: '#000', borderTop: '4px solid #0086CE' }}
+        >
+          <h3 className="vertical-timeline-element-title">Mentoring on Exercism</h3>
+          <hr className="vertical-timeline-element-title-separator" />
+          <h4 className="vertical-timeline-element-subtitle">exercism.org</h4>
+          <p> Helping others and having productive discussions about their approach
+            <br />
+            <a href="https://exercism.org/profiles/ample-samples">My public profile</a>
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -98,7 +112,7 @@ export function TimeLine() {
           <h3 className="vertical-timeline-element-title">Mechanical Engineering - 1st year</h3>
           <hr className="vertical-timeline-element-title-separator" />
           <h4 className="vertical-timeline-element-subtitle">Harper Adams University, Shropshire</h4>
-          <p>Member of the Motorsport club, work experience with <a href="https://www.m-sport.co.uk/">M-Sport Rally</a> team</p>
+          <p>Member of the Motorsport club, as well as work experience with <a href="https://www.m-sport.co.uk/">M-Sport Rally</a> team</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}

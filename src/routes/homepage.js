@@ -1,5 +1,4 @@
-import { Box, Container, List, ListItem, ListItemText, Typography, Button, Grid, Card } from "@mui/material"
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Box, Container, Typography, } from "@mui/material"
 import profilePicture from '../files/pictures/profile-pic.jpg'
 import "./style.css"
 import { TimeLine } from "../components/timeline"
