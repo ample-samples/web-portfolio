@@ -34,7 +34,7 @@ export function Homepage() {
             Passionate about elegant solutions and user-friendly interfaces.
             I see that software should be as easy for the end user to
             operate as possible to reduce friction and drive engagement and
-            I love finding simple and innovative solutions .
+            I love finding simple and innovative solutions.
           </Typography>
         </Box>
       </Container>

@@ -50,7 +50,7 @@ export function TimeLine() {
           date="2023 - Present"
           {...verticalTimelineElementSettings}
         >
-          <h3 className="vertical-timeline-element-title">Boolean Full Stack Developer</h3>
+          <h3 className="vertical-timeline-element-title">Boolean Full Stack Developer Course</h3>
           <hr className="vertical-timeline-element-title-separator" />
           <h4 className="vertical-timeline-element-subtitle">Boolean, UK</h4>
           <p> Passionate software developer, finding new projects to create and challenges to solve
