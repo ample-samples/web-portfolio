@@ -1,10 +1,10 @@
 import { Box, Container, List, ListItem, ListItemText, Typography, Button, Grid, Card } from "@mui/material"
-import { Navigate, useNavigate } from 'react-router-dom';
 import profilePicture from '../files/pictures/profile-pic.jpg'
+import { Navigate, useNavigate } from 'react-router-dom';
 import "./style.css"
 export function About() {
 
-  const frontEndTechs = ["React", "JavaScript", "Material UI", "HTML5", "CSS3"]
+  const frontEndTechs = ["React", "JavaScript", "Typescript", "HTML5", "CSS3"]
   const backEndTechs = ["Node.js", "PostgreSQL", "Prisma", "APIs", "Express"]
   const toolsTechs = ["Git", "NPM", "Figma", "Neovim", "Linux"]
 
@@ -16,18 +16,46 @@ export function About() {
   const navigate = useNavigate()
   const stackIconHeight = 60
   const stackIconWidth = 45
+  const highlightSx = { color: "#1976d2", display: "inline", fontWeight: "bold", fontSize: 18 }
+
+  function Highlight({ children }) {
+    return <Typography variant="p" sx={highlightSx}>{children}</Typography>
+  }
 
 
   return (
     <Container className="about" maxWidth='md'>
       <br />
       <br />
+        <Box>
+          <img src={profilePicture} alt="Profile" className="profile-pic" />
+        </Box>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           marginTop: 3,
         }}>
+        <Typography variant='p' sx={{ marginBottom: 6, lineHeight: 1.5 }}>
+          I'm an aspiring Junior Full Stack Software Developer with a <Highlight>passion</Highlight> and <Highlight>strong drive</Highlight> for creating performant and accessible digital solutions.
+          <br />
+          <br />
+          On the front end, I'm skilled in building user interfaces using <Highlight>React</Highlight>, <Highlight>JavaScript</Highlight>, and <Highlight>TypeScript</Highlight>.
+          I most enjoy bringing designs to life with React and TailwindCSS, ensuring a polished and responsive user experience.
+          <br />
+          <br />
+          I support front end solutions with my back end skills using <Highlight>Node.js</Highlight> and Express (and more recently, Next.js Server Actions),
+          I'm alse well-versed in database management, leveraging <Highlight>PostgreSQL</Highlight> and Prisma to organise and retrieve data efficiently.
+          I enjoy working with <Highlight>API</Highlight>s, and seeing the front end and back end come together to create a dynamic and cohesive application.
+          With a strong foundation in <Highlight>HTML5</Highlight>, <Highlight>CSS3</Highlight> and <Highlight>Javascript</Highlight>, I aim to bridge user experience and functionality.
+          <br />
+          <br />
+          My goal is to <Highlight>contribute</Highlight> my skills to a collaborative team,
+          where I can not only apply my knowledge in these technologies but also continue to <Highlight>learn</Highlight> and <Highlight>grow</Highlight>.
+          <br />
+          <br />
+          Let's collaborate and build something extraordinary <Highlight>together</Highlight>!
+        </Typography>
         <Typography variant='h4' sx={{ display: { xs: "block", md: "none" } }}>Check out some of my socials<br />👇  👇</Typography>
         <Typography variant='h4' sx={{ display: { xs: "none", md: "block" } }}>👇Check out some of my socials👇</Typography>
       </Box>
@@ -54,10 +82,10 @@ export function About() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          marginTop: 3,
+          marginTop: 5,
           flexWrap: "wrap",
         }}>
-        <Typography sx={{ marginBottom: 2 }} variant='h4'>Main Tech stack and Tools</Typography>
+        <Typography sx={{ marginBottom: 2, marginTop: 3 }} variant='h4'>Main Tech stack and Tools</Typography>
       </Box>
       <Grid container spacing={2} className="tech-stack" sx={{ flexGrow: 1, flexWrap: "wrap", justifyContent: "center", }}>
         <Grid item><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width={stackIconWidth} height={stackIconHeight} /> </a></Grid>

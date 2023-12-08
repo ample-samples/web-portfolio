@@ -17,7 +17,7 @@ export function Homepage() {
           <Typography variant='h1'>Todd</Typography>
         </Box>
         <Box>
-          <img src={profilePicture} alt="Profile Picture" className="profile-pic" />
+          <img src={profilePicture} alt="Profile" className="profile-pic" />
         </Box>
         <Box
           sx={{
@@ -31,9 +31,10 @@ export function Homepage() {
             display: "flex"
           }}>
           <Typography variant='p' fontSize={18} fontWeight="500" sx={{ color: 'inherit' }}>
-            Passionate about elegant solutions and user-friendly interfaces.
+            Passionate about performant solutions and user-friendly interfaces.
             I see that software should be as easy for the end user to
-            operate as possible to reduce friction and drive engagement and
+            operate as possible to reduce friction and drive engagement.
+            <br />
             I love finding simple and innovative solutions.
           </Typography>
         </Box>
