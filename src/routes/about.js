@@ -1,9 +1,12 @@
-import { Box, Container, List, ListItem, ListItemText, Typography, Button, Grid, Card } from "@mui/material"
+import { Slide, Box, Container, List, ListItem, ListItemText, Typography, Button, Grid, Card } from "@mui/material"
 import profilePicture from '../files/pictures/profile-pic.jpg'
 import { Navigate, useNavigate } from 'react-router-dom';
 import "./style.css"
-export function About() {
+import { useSnackbar } from 'notistack';
 
+
+export function About() {
+  const { enqueueSnackbar } = useSnackbar()
   const frontEndTechs = ["React", "JavaScript", "Typescript", "HTML5", "CSS3"]
   const backEndTechs = ["Node.js", "PostgreSQL", "Prisma", "APIs", "Express"]
   const toolsTechs = ["Git", "NPM", "Figma", "Neovim", "Linux"]
@@ -13,13 +16,34 @@ export function About() {
   }
 
   const uLinksSx = { justifyContent: "left" }
-  const navigate = useNavigate()
   const stackIconHeight = 60
   const stackIconWidth = 45
   const highlightSx = { color: "#1976d2", display: "inline", fontWeight: "bold", fontSize: 18 }
 
+  const handleCopyEmail = (event) => {
+    try {
+      navigator.clipboard.writeText("todd.griffin61@outlook.com")
+      enqueueSnackbar("Email Copied to Clipboard", { variant: 'success', TransitionComponent: TransitionComponentUp, autoHideDuration: 3000 })
+    } catch (error) {
+      enqueueSnackbar("Oops, something went wrong", { variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500 })
+    }
+  }
+
+  const handleCopyMobile = (event) => {
+    try {
+      navigator.clipboard.writeText("+447883965135")
+      enqueueSnackbar("Mobile Copied to Cliboard", { variant: 'success', TransitionComponent: TransitionComponentUp, autoHideDuration: 3000 })
+    } catch (error) {
+      enqueueSnackbar("Oops, something went wrong", { variant: 'error', TransitionComponent: TransitionComponentUp, autoHideDuration: 1500 })
+    }
+  }
+
   function Highlight({ children }) {
     return <Typography variant="p" sx={highlightSx}>{children}</Typography>
+  }
+
+  function TransitionComponentUp(props) {
+    return <Slide {...props} direction="up" />;
   }
 
 
@@ -56,20 +80,24 @@ export function About() {
           <br />
           Let's collaborate and build something extraordinary <Highlight>together</Highlight>!
         </Typography>
-        <Typography variant='h4' sx={{ display: { xs: "block", md: "none" } }}>Check out some of my socials<br />👇  👇</Typography>
-        <Typography variant='h4' sx={{ display: { xs: "none", md: "block" } }}>👇Check out some of my socials👇</Typography>
+        <Typography sx={{marginBottom: 6}} variant="h4">Don&prime;t hesitate to send me your thoughts through <Typography variant="p" sx={{ cursor: "copy" }}><a href="https://www.linkedin.com/in/todd-griffin-7817611bb/">LinkedIn</a></Typography>, <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyEmail}><a>email</a></Typography> or a <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyMobile}><a>text</a></Typography>! </Typography>
+        <br />
+        <br />
+        <Typography variant='h4' sx={{ display: { xs: "block", md: "none" } }}>Feel free to check out some of my other stuff<br />👇  👇</Typography>
+        <Typography variant='h4' sx={{ display: { xs: "none", md: "block" }, marginBottom: 1 }}>👇 <u>Feel free to check out some of my other stuff</u> 👇</Typography>
       </Box>
+
       <Grid container className="tech-verbose" sx={{
         flexDirection: { xs: "column", md: "row" }, justifyContent: "space-evenly",
       }}>
         <Grid sx={{ margin: 1 }}>
-          <Button variant="contained" target="_blank" href="https://app.enhancv.com/share/f59e760b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" sx={uLinksSx}>&lt; CV &gt;</Button>
+          <Button variant="contained" target="_blank" href="https://app.enhancv.com/share/f59e760b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" sx={uLinksSx}>★ CV ★</Button>
         </Grid>
+      </Grid>
 
-        <Grid sx={{ margin: 1 }}>
-          <Button variant="contained" target="_blank" href="https://www.linkedin.com/in/todd-griffin-7817611bb/" sx={uLinksSx}>&lt; LinkedIn &gt;</Button>
-        </Grid>
-
+      <Grid container className="tech-verbose" sx={{
+        flexDirection: { xs: "column", md: "row" }, justifyContent: "center",
+      }}>
         <Grid sx={{ margin: 1 }}>
           <Button variant="contained" target="_blank" href="https://github.com/ample-samples" sx={uLinksSx}>&lt; GitHub &gt;</Button>
         </Grid>
@@ -130,6 +158,4 @@ export function About() {
       </Box>
     </ Container>
   )
-
 }
-
