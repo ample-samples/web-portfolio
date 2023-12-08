@@ -76,9 +76,6 @@ export function About() {
           <br />
           My goal is to <Highlight>contribute</Highlight> my skills to a collaborative team,
           where I can not only apply my knowledge in these technologies but also continue to <Highlight>learn</Highlight> and <Highlight>grow</Highlight>.
-          <br />
-          <br />
-          Let's collaborate and build something extraordinary <Highlight>together</Highlight>!
         </Typography>
         <Typography sx={{marginBottom: 6}} variant="h4">Don&prime;t hesitate to send me your thoughts through <Typography variant="p" sx={{ cursor: "copy" }}><a href="https://www.linkedin.com/in/todd-griffin-7817611bb/">LinkedIn</a></Typography>, <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyEmail}><a>email</a></Typography> or a <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyMobile}><a>text</a></Typography>! </Typography>
         <br />
