@@ -21,11 +21,9 @@ export function TimeLine() {
         >
           <h3 className="vertical-timeline-element-title">Authoring a game addon</h3>
           <hr className="vertical-timeline-element-title-separator" />
-          <h4 className="vertical-timeline-element-subtitle">Just for fun!</h4>
+          <h4 className="vertical-timeline-element-subtitle">BeamNG.drive</h4>
           <p>
-            I'm authoring a game addon for the car simulation game BeamNG.Drive
-            <hr />
-            The mod adds tyre dynamics to the game. It's written in Javascript and Lua
+            An addon for the car simulation game BeamNG.Drive, adding tyre dynamics to the game. It's written in Javascript and Lua
             <br />
             <a target="_blank" rel="noreferrer" href="https://www.beamng.com/resources/tyre-thermals-and-wear-redux.29934/">Check it out here</a>
           </p>
