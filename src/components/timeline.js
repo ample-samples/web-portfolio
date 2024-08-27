@@ -23,7 +23,7 @@ export function TimeLine() {
           <h3 className="vertical-timeline-element-title">_nology upskilling</h3>
           <hr className="vertical-timeline-element-title-separator" />
           <h4 className="vertical-timeline-element-subtitle">nology.io, remote</h4>
-          <p> A TypeScript and Java based upskilling course  </p>
+          <p> A full stack TypeScript and Java based software development course upskilling course, included automated testing and deployment pipelines </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -64,7 +64,8 @@ export function TimeLine() {
           <h3 className="vertical-timeline-element-title">Boolean Full Stack Developer Course</h3>
           <hr className="vertical-timeline-element-title-separator" />
           <h4 className="vertical-timeline-element-subtitle">boolean.co.uk, remote</h4>
-          <p> Passionate software developer, finding new projects to create and challenges to solve
+          <p>
+             A full stack Javascript and Node.js based software development course upskilling course, including 900 hours of coursework
             <br />
             <a href="web-portfolio/#/portfolio">Check out my projects here</a>
           </p>

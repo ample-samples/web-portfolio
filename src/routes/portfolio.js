@@ -13,6 +13,9 @@ export function Portfolio() {
   return (
     <>
       <Container className="portfolio" component="main" maxWidth="md">
+        <Typography variant='h2' sx={{ marginTop: 3}}>
+          Project Portfolio
+        </Typography>
         <br />
         <br />
         <Typography variant='h4' sx={{ display: { xs: "block", md: "none" } }}>Check out some of the things I've built

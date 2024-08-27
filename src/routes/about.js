@@ -1,6 +1,6 @@
 import { Slide, Box, Container, List, ListItem, ListItemText, Typography, Button, Grid, Card } from "@mui/material"
 import profilePicture from '../files/pictures/profile-pic.jpg'
-import { Navigate, useNavigate } from 'react-router-dom';
+import CardContent from '@mui/material/CardContent';
 import "./style.css"
 import { useSnackbar } from 'notistack';
 
@@ -51,33 +51,42 @@ export function About() {
     <Container className="about" maxWidth='md'>
       <br />
       <br />
-        <Box>
-          <img src={profilePicture} alt="Profile" className="profile-pic" />
-        </Box>
+      <Box>
+        <img src={profilePicture} alt="Profile" className="profile-pic" />
+      </Box>
+      <Typography variant='h2'>
+        About me
+      </Typography>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           marginTop: 3,
         }}>
-        <Typography variant='p' sx={{ marginBottom: 6, lineHeight: 1.5 }}>
-          I'm an aspiring Junior Full Stack Software Developer with a <Highlight>passion</Highlight> and <Highlight>strong drive</Highlight> for creating performant and accessible digital solutions.
+        <Typography variant='p' sx={{ lineHeight: 1.5 }}>
+          <Card sx={{ padding: 3 }}>
+            I'm an aspiring Junior Full Stack Software Developer with a <Highlight>passion</Highlight> and <Highlight>strong drive</Highlight> for creating performant and accessible digital solutions.
+          </Card>
           <br />
           <br />
-          On the front end, I'm skilled in building user interfaces using <Highlight>React</Highlight>, <Highlight>JavaScript</Highlight>, and <Highlight>TypeScript</Highlight>.
-          I most enjoy bringing designs to life with React and TailwindCSS, ensuring a polished and responsive user experience.
+          <Card sx={{ padding: 3 }}>
+            On the front end, I'm skilled in building user interfaces using <Highlight>React</Highlight>, <Highlight>JavaScript</Highlight>, and <Highlight>TypeScript</Highlight>.
+            I most enjoy bringing designs to life with React and TailwindCSS, ensuring a polished and responsive user experience.
           <br />
           <br />
-          I support front end solutions with my back end skills using <Highlight>Node.js</Highlight> and Express (and more recently, Next.js Server Actions),
-          I'm alse well-versed in database management, leveraging <Highlight>PostgreSQL</Highlight> and Prisma to organise and retrieve data efficiently.
-          I enjoy working with <Highlight>API</Highlight>s, and seeing the front end and back end come together to create a dynamic and cohesive application.
-          With a strong foundation in <Highlight>HTML5</Highlight>, <Highlight>CSS3</Highlight> and <Highlight>Javascript</Highlight>, I aim to bridge user experience and functionality.
+            I support front end solutions with my back end skills using <Highlight>Node.js</Highlight> and Express (and more recently, Next.js Server Actions),
+            I'm alse well-versed in database management, leveraging <Highlight>PostgreSQL</Highlight> and Prisma to organise and retrieve data efficiently.
+            I enjoy working with <Highlight>API</Highlight>s, and seeing the front end and back end come together to create a dynamic and cohesive application.
+            With a strong foundation in <Highlight>HTML5</Highlight>, <Highlight>CSS3</Highlight> and <Highlight>Javascript</Highlight>, I aim to bridge user experience and functionality.
+          </Card>
           <br />
           <br />
-          My goal is to <Highlight>contribute</Highlight> my skills to a collaborative team,
-          where I can not only apply my knowledge in these technologies but also continue to <Highlight>learn</Highlight> and <Highlight>grow</Highlight>.
+          <Card sx={{ padding: 3 }}>
+            My goal is to <Highlight>contribute</Highlight> my skills to a collaborative team,
+            where I can not only apply my knowledge in these technologies but also continue to <Highlight>learn</Highlight> and <Highlight>grow</Highlight>.
+          </Card>
         </Typography>
-        <Typography sx={{marginBottom: 6}} variant="h4">Don&prime;t hesitate to send me your thoughts through <Typography variant="p" sx={{ cursor: "copy" }}><a href="https://www.linkedin.com/in/todd-griffin-7817611bb/">LinkedIn</a></Typography>, <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyEmail}><a>email</a></Typography> or a <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyMobile}><a>text</a></Typography>! </Typography>
+        <Typography sx={{ marginBottom: 6 }} variant="h4">Don&prime;t hesitate to send me your thoughts through <Typography variant="p" sx={{ cursor: "copy" }}><a href="https://www.linkedin.com/in/todd-griffin-7817611bb/">LinkedIn</a></Typography>, <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyEmail}><a>email</a></Typography> or a <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyMobile}><a>text</a></Typography>! </Typography>
         <br />
         <br />
         <Typography variant='h4' sx={{ display: { xs: "block", md: "none" } }}>Feel free to check out some of my other stuff<br />👇  👇</Typography>
@@ -88,7 +97,7 @@ export function About() {
         flexDirection: { xs: "column", md: "row" }, justifyContent: "space-evenly",
       }}>
         <Grid sx={{ margin: 1 }}>
-          <Button variant="contained" target="_blank" href="https://app.enhancv.com/share/f59e760b/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic" sx={uLinksSx}>★ CV ★</Button>
+          <Button variant="contained" target="_blank" href="https://drive.google.com/file/d/1IpvcXPEyedMBdIQPg87U3A64uL85s8eD/view?usp=drive_link" sx={uLinksSx}>★ CV ★</Button>
         </Grid>
       </Grid>
 
