@@ -15,15 +15,27 @@ export function TimeLine() {
       <>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          icon={<img className="timeline-element-icon" src="https://www.svgrepo.com/show/488881/computer.svg" alt="" />}
+          date="Feb 2024 - May 2024"
+          {...verticalTimelineElementSettings}
+          contentStyle={{ background: '#fff', color: '#000', borderTop: '4px solid #0086CE' }}
+        >
+          <h3 className="vertical-timeline-element-title">_nology upskilling</h3>
+          <hr className="vertical-timeline-element-title-separator" />
+          <h4 className="vertical-timeline-element-subtitle">nology.io, remote</h4>
+          <p> A TypeScript and Java based upskilling course  </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           icon={<img className="timeline-element-icon" src="https://www.svgrepo.com/show/520607/car-wheel.svg" alt="" />}
           date="Feb 2024 - Present"
           {...verticalTimelineElementSettings}
         >
           <h3 className="vertical-timeline-element-title">Authoring a game addon</h3>
           <hr className="vertical-timeline-element-title-separator" />
-          <h4 className="vertical-timeline-element-subtitle">BeamNG.drive</h4>
+          <h4 className="vertical-timeline-element-subtitle">beamng.com, BeamNG.drive</h4>
           <p>
-            An addon for the car simulation game BeamNG.Drive, adding tyre dynamics to the game. It's written in Javascript and Lua
+            An addon for the car simulation game BeamNG.drive, adding tyre dynamics to the game. It's written in Javascript and Lua
             <br />
             <a target="_blank" rel="noreferrer" href="https://www.beamng.com/resources/tyre-thermals-and-wear-redux.29934/">Check it out here</a>
           </p>
@@ -51,7 +63,7 @@ export function TimeLine() {
         >
           <h3 className="vertical-timeline-element-title">Boolean Full Stack Developer Course</h3>
           <hr className="vertical-timeline-element-title-separator" />
-          <h4 className="vertical-timeline-element-subtitle">Boolean, UK</h4>
+          <h4 className="vertical-timeline-element-subtitle">boolean.co.uk, remote</h4>
           <p> Passionate software developer, finding new projects to create and challenges to solve
             <br />
             <a href="web-portfolio/#/portfolio">Check out my projects here</a>
