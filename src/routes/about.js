@@ -86,9 +86,7 @@ export function About() {
             where I can not only apply my knowledge in these technologies but also continue to <Highlight>learn</Highlight> and <Highlight>grow</Highlight>.
           </Card>
         </Typography>
-        <Typography sx={{ marginBottom: 6 }} variant="h4">Don&prime;t hesitate to send me your thoughts through <Typography variant="p" sx={{ cursor: "copy" }}><a href="https://www.linkedin.com/in/todd-griffin-7817611bb/">LinkedIn</a></Typography>, <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyEmail}><a>email</a></Typography> or a <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyMobile}><a>text</a></Typography>! </Typography>
-        <br />
-        <br />
+        <Typography sx={{ marginBottom: 6, marginTop: 4 }} variant="h4">Don&prime;t hesitate to send me your thoughts through <Typography variant="p" sx={{ cursor: "copy" }}><a href="https://www.linkedin.com/in/todd-griffin-7817611bb/">LinkedIn</a></Typography>, <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyEmail}><a>email</a></Typography> or a <Typography variant="p" sx={{ cursor: "copy" }} onClick={handleCopyMobile}><a>text</a></Typography>! </Typography>
         <Typography variant='h4' sx={{ display: { xs: "block", md: "none" } }}>Feel free to check out some of my other stuff<br />👇  👇</Typography>
         <Typography variant='h4' sx={{ display: { xs: "none", md: "block" }, marginBottom: 1 }}>👇 <u>Feel free to check out some of my other stuff</u> 👇</Typography>
       </Box>
